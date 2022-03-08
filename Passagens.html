@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Linkagem para CSS -->
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+
+	<title>Horizon Airlines - Passagens</title>
+
+	<link rel="shortcut icon" href="Imagens/logopng.png">
+
+	<style type="text/css">
+		
+		.navbar label a:hover{
+			text-decoration: underline;
+			text-decoration-color: #11F69636;
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<!-- ChatBot -->
+
+	<script src="https://unpkg.com/blip-chat-widget" type="text/javascript">
+	</script>
+	<script>
+    	(function () {
+      		window.onload = function () {
+        	new BlipChat()
+        	.withAppKey('aG9yaXpvbmJvdDpkNWRjOThlYS1hZGM2LTQwOTctYTM3Zi04ODVmODI1ZDQ0MDE=')
+        	.withButton({"color":"#11F696","icon":""})
+        	.withCustomCommonUrl('https://daniel-rodrigues-yo836.chat.blip.ai/')
+        	.build();
+        	}
+  		})();
+	</script>                     
+
+	<!-- NavBar -->
+
+	<div class="p-0" style="background-color: #11F69636;" id="minnav">
+
+		<!-- Informações da NavBar -->
+
+		<div class="d-flex bd-highlight mb-3">
+			<div class="p-2 me-auto bd-highlight" id="Nav"><a class="nav-link p-0 text-black" href="index.html">← Início</a></div>
+			<div class="p-2 bd-highlight" id="Nav"><a href="Contatos.html" class="nav-link p-0 text-black">Contatos</div>
+			<div class="p-2 bd-highlight" id="Nav">|</div>
+			<div class="p-2 bd-highlight" id="Nav"><a href="Sobre_Horizon.html" class="nav-link p-0 text-black">Sobre Nós</a></div>
+			<div class="p-2 bd-highlight" id="Nav">|</div>
+			<div class="p-2 bd-highlight" id="Nav"><a href="Parceiros.html" class="nav-link p-0 text-black">Parceiros</a></div>
+		</div>
+	</div>
+
+	<!-- Navbar Principal -->
+
+	<nav class="navbar navbar-expand-lg navbar-light p-4">
+  		<div class="container-fluid">
+    		<a class="navbar-brand" href="index.html"><img src="Imagens/logohorizon.jpg"></a>
+    		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      			<span class="navbar-toggler-icon"></span>
+    		</button>
+    		<div class="collapse navbar-collapse" id="navbarNavDropdown">
+      			<ul class="navbar-nav">
+        			<li class="nav-item">
+          				<a class="nav-link active" aria-current="page" href="#">Passagens Aéreas</a>
+        			</li>
+        			<li class="nav-item">
+          				<a class="nav-link" href="Ofertas.html">Ofertas e Destinos</a>
+        			</li>
+        			<li class="nav-item dropdown">
+          				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            			Central e Atendimento
+          				</a>
+			          		<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+			            		<li><a class="dropdown-item" href="Serv_Horizon.html">Serviços Horizon</a></li>
+			            		<li><a class="dropdown-item" href="Duvidas.html">Central de Dúvidas</a></li>
+			            		<li><a class="dropdown-item" href="Sobre_Horizon.html">Sobre a Horizon Airlines</a></li>
+		          			</ul>
+          				
+      			</ul>
+    		</div>
+  		</div>
+  		<label class="nav-link fw-normal" for="id_login" style="color: gray; font-size: 21px; cursor: pointer;"><a href="Login.html" class="nav-link p-0 text-black">Login</a></label>
+  		<a href="Login.html"><img src="Imagens/logologin.png" id=id_login style="width: 40px; height: auto;"></a>
+	</nav>
+
+	<!-- Regras Horizon -->
+
+	<div class="p-5" style="background-color: #11F69636">
+		<p class="fs-4"><b>Regras Horizon</b></p>
+		<div class="container px-4">
+		  <div class="row gx-5">
+		    <div class="col">
+		     <div class="p-3 fs-5 text-center fw-normal">Cancelamento de Voos</div>
+		     <div class="p-3 text-justify" style="font-family: century gothic; font-size: 15px;">
+			      Em casos de cancelamento de voos, o passageiro poderá optar por ter seu reembolso, reagendamento da viagem ou troca de passagem dependendo do valor de compra.<br>
+			      Consulte a Central de Atendimento, ou converse com o Horizobô.
+			  </div>
+		    </div>
+		    <div class="col">
+		      <div class="p-3 fs-5 text-center fw-normal">Protocolos de Segurança</div>
+		      <div class="p-3 text-justify" style="font-family: century gothic; font-size: 15px;">
+			      A Horizon Airlines mede e verifica a saúde dos passageiros antes da entrada.<br>
+			      É muito importante saber que, em casos de doenças infectocontagiosas, o passageiro poderá ser impedido de embarcar para assegurar a segurança.
+			  </div>
+		    </div>
+		  </div>
+		</div>
+	</div>
+
+	<!-- Viagens Horizon -->
+
+	<div class="p-5">
+		<p class="fs-4"><b>Viagens <i>(Nacionais)</i>:</b></p>
+	</div>
+
+	<!-- Cards -->
+
+	<div class="card-group" style="margin-left: 5%;" align="center">
+		<div class="card text-dark bg-light ms-3 shadow mb-3 rounded" style="max-width: 30%;">
+			<img src="Imagens/img4viagem.jpg" height="40%" class="card-img-top" alt="...">
+		  	<div class="card-header">Viaje no dia 10/12/2021</div>
+		  	<div class="card-body d-flex flex-column align-items-center">
+		    	<h5 class="card-title">Fortaleza</h5>
+		    	<br>
+		    	<p class="card-text">Fortaleza tem 34 km de praias e o visual de cada uma é paradisíaco, o mar é cristalino e o clima é de tirar o fôlego! Sem contar a Praia do Futuro, que é a principal praia urbana da cidade e uma das mais badaladas do país.</p>
+		   		<a href="Dados_Viagem.html" class="btn btn-success mt-auto">Viajar</a>
+		  	</div>
+		</div>
+		<div class="card text-dark bg-light ms-3 shadow mb-3 rounded" style="max-width: 30%;">
+			<img src="Imagens/Brasilia.jpg" height="40%" class="card-img-top" alt="...">
+			<div class="card-header">Viaje no dia 20/12/2021</div>
+			<div class="card-body d-flex flex-column align-items-center">
+		   		<h5 class="card-title">Brasília</h5>
+		    	<br>
+		    	<p class="card-text">Na capital do Brasil, a longo de toda a cidade, você poderá desfrutar da arborização da cidade, que conta com diversas árvores frutíferas, e um show de pássaros que em certas épocas do ano também chegam aos montes na cidade para provar das frutas de Brasília.</p>
+		    	<a href="Dados_Viagem.html" class="btn btn-success mt-auto">Viajar</a>
+		  	</div>
+		</div>
+		<div class="card text-dark bg-light ms-3 shadow mb-3 rounded" style="max-width: 30%;">
+			<img src="Imagens/Maceio.jpg" height="40%" class="card-img-top" alt="...">
+		  	<div class="card-header">Viaje no dia 05/01/2022</div>
+		  	<div class="card-body d-flex flex-column align-items-center">
+		    	<h5 class="card-title">Maceió</h5>
+		    	<br>
+		    	<p class="card-text">Maceió é conhecida como “Caribe Brasileiro” e “Paraíso das águas”, pois ela possui praias de Norte a Sul que encantam e surpreendem não só ao turista, mas também seus conterrâneos.</p>
+		    	<a href="Dados_Viagem.html" class="btn btn-success mt-auto">Viajar</a>
+		  	</div>
+		</div>
+	</div>
+	<br>
+	<div class="card-group" style="margin-left: 5%;" align="center">
+		<div class="card text-dark bg-light ms-3 shadow mb-3 rounded" style="max-width: 30%;">
+			<img src="Imagens/Natal.jpg" height="40%" class="card-img-top" alt="...">
+		  	<div class="card-header">Viaje no dia 23/01/2022</div>
+		  	<div class="card-body d-flex flex-column align-items-center">
+		    	<h5 class="card-title">Natal</h5>
+		    	<br>
+		    	<p class="card-text">Natal não tem tempo ruim, pois a cidade, em qualquer época do ano, é única e memorável, inclusive, ela é conhecida como "A cidade sol".</p>
+		    	<a href="Dados_Viagem.html" class="btn btn-success mt-auto">Viajar</a>
+		  	</div>
+		</div>
+		<div class="card text-dark bg-light ms-3 shadow mb-3 rounded" style="max-width: 30%;">
+			<img src="Imagens/SaoPaulo.jpg" height="40%" class="card-img-top" alt="...">
+		  	<div class="card-header">Viaje no dia 18/02/2022</div>
+		  	<div class="card-body d-flex flex-column align-items-center">
+		    	<h5 class="card-title">São Paulo</h5>
+		    	<br>
+		    	<p class="card-text"> São Paulo é um dos principais polos culturais do mundo, com uma infinidade de programação para quem gosta de artes plásticas, música, teatro, dança, ente outras experiências.</p>
+		    	<a href="Dados_Viagem.html" class="btn btn-success mt-auto">Viajar</a>
+		  	</div>
+		</div>
+		<div class="card text-dark bg-light ms-3 shadow mb-3 rounded" style="max-width: 30%;">
+			<img src="Imagens/Sergipe.jpg" height="40%" class="card-img-top" alt="...">
+		  	<div class="card-header">Viaje no dia 28/02/2022</div>
+		  	<div class="card-body d-flex flex-column align-items-center">
+		    	<h5 class="card-title">Sergipe</h5>
+		    	<br>
+		    	<p class="card-text">Sergipe oferece um pouco daquilo que todo turista precisa para ter as férias perfeitas: povo hospitaleiro, temperaturas agradáveis, deliciosa gastronomia e paisagens de tirar o fôlego.</p>
+		    	<a href="Dados_Viagem.html" class="btn btn-success mt-auto">Viajar</a>
+		  	</div>
+		</div>
+	</div>
+	<br>
+	<div class="card-group" style="margin-left: 5%;" align="center">
+		<div class="card text-dark bg-light ms-3 shadow mb-3 rounded" style="max-width: 30%;">
+			<img src="Imagens/RioJaneiro.jpg" height="40%" class="card-img-top" alt="...">
+		  	<div class="card-header">Viaje no dia 02/03/2022</div>
+		  	<div class="card-body d-flex flex-column align-items-center">
+		    	<h5 class="card-title">Rio de Janeiro</h5>
+		    	<br>
+		    	<p class="card-text">Não existem paisagens tão belas quanto as do Rio de Janeiro, pois a mistura de serra com mar é de tirar o fôlego, e rodeia a cidade por todos os lados.</p>
+		   		<a href="Dados_Viagem.html" class="btn btn-success mt-auto">Viajar</a>
+		  	</div>
+		</div>
+		<div class="card text-dark bg-light ms-3 shadow mb-3 rounded" style="max-width: 30%;">
+			<img src="Imagens/EspiritoSanto.png" height="40%" class="card-img-top" alt="...">
+			<div class="card-header">Viaje no dia 01/03/2022</div>
+		  	<div class="card-body d-flex flex-column align-items-center">
+		    	<h5 class="card-title">Espírito Santo</h5>
+				<br>
+		    	<p class="card-text">O Espírito Santo é um dos 4 estados do sudeste, sendo ele o estado riquíssimo de cultura, gastronomia, praias e cidades históricas.</p>
+		    	<a href="Dados_Viagem.html" class="btn btn-success mt-auto">Viajar</a>
+		  	</div>
+		</div>
+		<div class="card text-dark bg-light ms-3 shadow mb-3 rounded" style="max-width: 30%;">
+			<img src="Imagens/Salvador.jpg" height="40%" class="card-img-top" alt="...">
+		  	<div class="card-header">Viaje no dia 24/03/2022</div>
+		  	<div class="card-body d-flex flex-column align-items-center">
+		    	<h5 class="card-title">Salvador</h5>
+		    	<br>
+		    	<p class="card-text">Salvador é a casa de boa parte dos elementos que compõem a nossa identidade cultural de brasileiros. A cidade abriga diversos espaços culturais, uma gastronomia variada, complexos arquitetônicos da época colonial e paisagens de tirar o fôlego.</p>
+		   		<a href="Dados_Viagem.html" class="btn btn-success mt-auto">Viajar</a>
+		  	</div>
+		</div>
+	</div>
+
+	<div class="p-5">
+		<p class="fs-4"><b>Viagens <i>(Internacionais)</i>:</b></p>
+	</div>
+
+	<!-- Cards -->
+
+	<div class="card-group" style="margin-left: 5%;" align="center">
+		<div class="card text-dark bg-light ms-3 shadow mb-3 rounded" style="max-width: 30%;">
+			<img src="Imagens/NovaIorque.jpg" height="40%" class="card-img-top" alt="...">
+		  	<div class="card-header">Viaje no dia 10/12/2021</div>
+		  	<div class="card-body d-flex flex-column align-items-center">
+		    	<h5 class="card-title">Nova Iorque</h5>
+		    	<br>
+		    	<p class="card-text"> Nova Iorque: a magia da cidade que nunca dorme. Desde que foi avistada pela primeira vez, por Giovani da Verrazano, há quase 500 anos, a baía de Nova Iorque tornou-se uma presa que toda a Europa queria capturar.</p>
+		    	<a href="Dados_Viagem.html" class="btn btn-success mt-auto">Viajar</a>
+		  	</div>
+		</div>
+		<div class="card text-dark bg-light ms-3 shadow mb-3 rounded" style="max-width: 30%;">
+			<img src="Imagens/Canada.jpg" height="40%" class="card-img-top" alt="...">
+			<div class="card-header">Viaje no dia 20/12/2021</div>
+			<div class="card-body d-flex flex-column align-items-center">
+		   		<h5 class="card-title">Canadá</h5>
+		    	<br>
+		    	<p class="card-text">No Canadá ficam as sedes do National Ballet of Canada e da Canadian Opera, entre os principais museus e galerias da cidade destacam-se o Royal Ontario Museum, dedicado às artes, arqueologia e história natural; a Thomson Gallery, ente outros.</p>
+		    	<a href="Dados_Viagem.html" class="btn btn-success mt-auto">Viajar</a>
+		  	</div>
+		</div>
+		<div class="card text-dark bg-light ms-3 shadow mb-3 rounded" style="max-width: 30%;">
+			<img src="Imagens/Mexico.jpg" height="40%" class="card-img-top" alt="...">
+		  	<div class="card-header">Viaje no dia 05/01/2022</div>
+		  	<div class="card-body d-flex flex-column align-items-center">
+		    	<h5 class="card-title">México</h5>
+		    	<br>
+		    	<p class="card-text">México é conhecido pelos seus sabores da Tequila e suas variações percorrendo a Rota da Tequila, O roteiro passa pelas destilarias mais famosas do país.</p>
+		    	<a href="Dados_Viagem.html" class="btn btn-success mt-auto">Viajar</a>
+		  	</div>
+		</div>
+	</div>
+	<br>
+	<div class="card-group" style="margin-left: 5%;" align="center">
+		<div class="card text-dark bg-light ms-3 shadow mb-3 rounded" style="max-width: 30%;">
+			<img src="Imagens/Argentina.jpg" height="40%" class="card-img-top" alt="...">
+		  	<div class="card-header">Viaje no dia 23/01/2022</div>
+		  	<div class="card-body d-flex flex-column align-items-center">
+		    	<h5 class="card-title">Argentina</h5>
+		    	<br>
+		    	<p class="card-text">A Argentina é um dos destinos mais procurados pelos brasileiros e não faltam motivos para ir ao país vizinho: paisagens únicas, gastronomia famosa pelas carnes, além de ser uma importante região produtora mundial de vinho.</p>
+		    	<a href="Dados_Viagem.html" class="btn btn-success mt-auto">Viajar</a>
+		  	</div>
+		</div>
+		<div class="card text-dark bg-light ms-3 shadow mb-3 rounded" style="max-width: 30%;">
+			<img src="Imagens/Italia.jpg" height="40%" class="card-img-top" alt="...">
+		  	<div class="card-header">Viaje no dia 18/02/2022</div>
+		  	<div class="card-body d-flex flex-column align-items-center">
+		    	<h5 class="card-title">Itália</h5>
+		    	<br>
+		    	<p class="card-text">A Itália possui belas paisagens de montanhas, vulcões a praias paradisíacas, ela não decepciona. De norte a sul, a Itália possui belas paisagens dignas de cartão postal.</p>
+		    	<a href="Dados_Viagem.html" class="btn btn-success mt-auto">Viajar</a>
+		  	</div>
+		</div>
+		<div class="card text-dark bg-light ms-3 shadow mb-3 rounded" style="max-width: 30%;">
+			<img src="Imagens/Havai.jpg" height="40%" class="card-img-top" alt="...">
+		  	<div class="card-header">Viaje no dia 28/02/2022</div>
+		  	<div class="card-body d-flex flex-column align-items-center">
+		    	<h5 class="card-title">Havaí</h5>
+		    	<br>
+		    	<p class="card-text">Natureza e cidade convivendo muito bem são outro motivo por que conhecer o Havaí Isso acontece especialmente em Oahu, onde fica Honolulu.</p>
+		    	<a href="Dados_Viagem.html" class="btn btn-success mt-auto">Viajar</a>
+		  	</div>
+		</div>
+	</div>
+	<br>
+	<div class="card-group" style="margin-left: 5%;" align="center">
+		<div class="card text-dark bg-light ms-3 shadow mb-3 rounded" style="max-width: 30%;">
+			<img src="Imagens/Portugal.jpg" height="40%" class="card-img-top" alt="...">
+		  	<div class="card-header">Viaje no dia 02/03/2022</div>
+		  	<div class="card-body d-flex flex-column align-items-center">
+		    	<h5 class="card-title">Portugal</h5>
+		    	<br>
+		    	<p class="card-text">Portugal é um destino de viagem maravilhoso, especialmente para os brasileiros. Ao desembarcar por lá, temos a sensação de estar em casa. Você vai encontrar um local rico em cultura, boa gastronomia, ótimos vinhos e anfitriões amáveis.</p>
+		   		<a href="Dados_Viagem.html" class="btn btn-success mt-auto">Viajar</a>
+		  	</div>
+		</div>
+		<div class="card text-dark bg-light ms-3 shadow mb-3 rounded" style="max-width: 30%;">
+			<img src="Imagens/ReinoUnido.jpg" height="40%" class="card-img-top" alt="...">
+			<div class="card-header">Viaje no dia 01/03/2022</div>
+		  	<div class="card-body d-flex flex-column align-items-center">
+		    	<h5 class="card-title">Reino Unido</h5>
+				<br>
+		    	<p class="card-text">O Reino Unido é referência no estudo da língua inglesa, aliando excelência acadêmica e uma rica cultura, que se expande desde a cosmopolita Londres até as terras altas da Escócia.</p>
+		    	<a href="Dados_Viagem.html" class="btn btn-success mt-auto">Viajar</a>
+		  	</div>
+		</div>
+		<div class="card text-dark bg-light ms-3 shadow mb-3 rounded" style="max-width: 30%;">
+			<img src="Imagens/Japao.jpg" height="40%" class="card-img-top" alt="...">
+		  	<div class="card-header">Viaje no dia 24/03/2022</div>
+		  	<div class="card-body d-flex flex-column align-items-center">
+		    	<h5 class="card-title">Japão</h5>
+		    	<br>
+		    	<p class="card-text">Vindo ao Japão como turista, a cultura certamente norteará as tuas decisões e escolhas. Castelos, templos, santuários, restaurantes típicos e tradicionais, os festivais milenares e a tradição sendo perpetuada e respeitada fazem da cultura japonesa o motivo número 1 para turismos.</p>
+		   		<a href="Dados_Viagem.html" class="btn btn-success mt-auto">Viajar</a>
+		  	</div>
+		</div>
+	</div>
+	<hr style="margin-top: 50px;">
+
+	<!-- Rodapé -->
+
+	<div class="container">
+  		<footer class="py-5">
+    		<div class="row">
+      			<div class="col-2">
+        			<h5>Geral</h5>
+       				<ul class="nav flex-column">
+          				<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Voltar ao Topo</a></li>
+          				<li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted">Home</a></li>
+          				<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Passagens</a></li>
+          				<li class="nav-item mb-2"><a href="Duvidas.html" class="nav-link p-0 text-muted">Dúvidas</a></li>
+          				<li class="nav-item mb-2"><a href="Sobre_Horizon.html" class="nav-link p-0 text-muted">Sobre Horizon</a></li>
+        			</ul>
+      			</div>
+
+	      		<div class="col-2">
+	        		<h5>Horizon</h5>
+	        		<ul class="nav flex-column">
+	          			<li class="nav-item mb-2"><a href="FrameWork/Companhia Horizon.pdf" class="nav-link p-0 text-muted">Wireframe</a></li>
+	          			<li class="nav-item mb-2"><a href="Contatos.html" class="nav-link p-0 text-muted">Contato</a></li>
+	          			<li class="nav-item mb-2"><a href="Parceiros.html" class="nav-link p-0 text-muted">Parceiros</a></li>
+
+
+	        		</ul>
+	      		</div>
+
+	      		<div class="col-2">
+	      		</div>
+
+	      		<div class="col-4 offset-1">
+	        		<form action="" method="post">
+	          			<h5>Se Inscreva para Avisos!</h5>
+	          			<p>Todas as notícias de voo, promoções e viagens na palma da sua mão.</p>
+	          			<div class="d-flex w-100 gap-2">
+	            			<label for="newsletter1" class="visually-hidden">Endereço de Email</label>
+	           				<input id="newsletter1" type="email" class="form-control" placeholder="Endereço de Email">
+	            			<button class="btn btn-primary" type="submit">Aceitar</button>
+	          			</div>
+        			</form><br>
+
+        			<center><h5>Criado Por:</h5>
+        			<p>Daniel Rodrigues da Rocha</p>
+        			<p>Davi Rodrigues da Rocha</p></center>
+      			</div>
+    		</div>
+
+    <div class="d-flex justify-content-between py-4 my-4 border-top container">
+    	<img src="Imagens/logohorizon.jpg">
+      <p class="ms-2" style="font-size: 13px;">© 2021 Horizon Airlines Brasil Rua Jonildo nº 999, CEP 99999-999 Brasília/DF CNPJ: 00.000.000/0000-00.<br>(Projeto desenvolvido durante o curso Front-End - SENAI GAMA)</p>
+      <ul class="list-unstyled d-flex">
+        <li class="ms-1"><a class="link-dark" href="https://twitter.com/"><img src="Imagens/Twitter.jpg" style="width: 30px; height: auto;"></a></li>
+        <li class="ms-1"><a class="link-dark" href="https://www.instagram.com/"><img src="Imagens/Insta.jpg" style="width: 30px; height: auto;"></a></li>
+        <li class="ms-1"><a class="link-dark" href="https://www.Facebook.com/"><img src="Imagens/Face.png" style="width: 30px; height: auto;"></a></li>
+      </ul>
+    </div>
+  </footer>
+</div>
+
+	<!-- Links para JS executar Bootstrap -->
+
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>

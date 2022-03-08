@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Linkagem para CSS -->
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+
+	<title>Horizon Airlines - Cadastro</title>
+
+	<link rel="shortcut icon" href="Imagens/logopng.png">
+</head>
+<body>
+
+	<!-- ChatBot -->
+
+	<script src="https://unpkg.com/blip-chat-widget" type="text/javascript">
+	</script>
+	<script>
+    	(function () {
+      		window.onload = function () {
+        	new BlipChat()
+        	.withAppKey('aG9yaXpvbmJvdDpkNWRjOThlYS1hZGM2LTQwOTctYTM3Zi04ODVmODI1ZDQ0MDE=')
+        	.withButton({"color":"#11F696","icon":""})
+        	.withCustomCommonUrl('https://daniel-rodrigues-yo836.chat.blip.ai/')
+        	.build();
+        	}
+  		})();
+	</script>                     
+
+	<!-- NavBar -->
+
+	<div class="p-0" style="background-color: #11F69636;" id="minnav">
+
+		<!-- Informações da NavBar -->
+
+		<div class="d-flex bd-highlight mb-3">
+			<div class="p-2 me-auto bd-highlight" id="Nav"><a class="nav-link p-0 text-black" href="index.html">← Início</a></div>
+			<div class="p-2 bd-highlight" id="Nav"><a class="nav-link p-0 text-black" href="Contatos.html">Contatos</a></div>
+			<div class="p-2 bd-highlight" id="Nav">|</div>
+			<div class="p-2 bd-highlight" id="Nav"><a href="Sobre_Horizon.html" class="nav-link p-0 text-black">Sobre Nós</a></div>
+			<div class="p-2 bd-highlight" id="Nav">|</div>
+			<div class="p-2 bd-highlight" id="Nav"><a class="nav-link p-0 text-black" href="Parceiros.html">Parceiros</a></div>
+		</div>
+	</div>
+	<br><br>
+    
+	<div class="container">
+		<center>
+	  		<main>
+	    		<div class="pb-5 text-center">
+	      			<img class="d-block mx-auto mb-4" src="Imagens/logohorizon.jpg" alt="" width="15%">
+	      			<h2>Formulário de Cadastro</h2>
+	      			<p class="lead">Preencha todas as informações necessárias do seu cadastramento, logo em seguida, será redirecionado para a home da Horizon caso o cadastro tenha sucesso.</p>
+	    		</div>
+
+	      		<div class="col-md-7 col-lg-8">
+	        		<h4 class="mb-3" _msthash="968656" _msttexthash="515554">Cadastro</h4>
+	        		<form class="needs-validation was-validated" name="FormCad" novalidate="" method="post">
+		          		<div class="row g-3">
+		            		<div class="col-sm-6">
+		              			<label for="firstName" class="form-label" _msthash="2295839" _msttexthash="208377">Nome próprio</label>
+		              			<input type="text" class="form-control" id="firstName" placeholder="" required="" name="Name">
+		              			<div class="invalid-feedback" _msthash="2152878" _msttexthash="637039" _msthidden="1">
+		                			O primeiro nome válido é obrigatório
+		              			</div>
+		            		</div>
+
+		            		<div class="col-sm-6">
+		              			<label for="lastName" class="form-label" _msthash="2296086" _msttexthash="92794">Sobrenome</label>
+		              			<input type="text" class="form-control" id="lastName" placeholder="" required="" name="LastName">
+		              			<div class="invalid-feedback" _msthash="2153099" _msttexthash="592748" _msthidden="1">
+		                			O sobrenome válido é obrigatório
+		              			</div>
+		            		</div>
+
+		            		<div class="col-12">
+		              			<label for="username" class="form-label" _msthash="2296333" _msttexthash="263640">Nome de usuário</label>
+		              			<div class="input-group has-validation">
+		                			<span class="input-group-text">@</span>
+		                			<input type="text" class="form-control" id="username" placeholder="Nome do usuário" required="" _mstplaceholder="263640" name="User">
+		              				<div class="invalid-feedback" _msthash="2592174" _msttexthash="557973" _msthidden="1">
+		                  				Seu nome de usuário é obrigatório
+		                			</div>
+		              			</div>
+		            		</div>
+
+			            		<div class="col-md-4" style="margin-left: 15%;">
+				              		<label for="idade" class="form-label" _msthash="2297815" _msttexthash="41496">Idade</label>
+				              		<input type="number" class="form-control" id="idade" placeholder="" required="" min="0" name="Anos" onchange="checagem()">
+				              		<div class="invalid-feedback" _msthash="2154646" _msttexthash="302874" _msthidden="1">
+				                		Idade obrigatório
+				              		</div>
+				            	</div>
+				            	<div class="col-md-4">
+				              		<label for="sexo" class="form-label" _msthash="2297815" _msttexthash="41496">Sexo</label>
+				              		<select class="form-select" id="country" required="" name="Sexo">
+				              			<option value="" _msthash="312611" _msttexthash="101647">Escolher...</option>
+				              			<option value="Masc" _msthash="312611" _msttexthash="101647">Masculino</option>
+				              			<option value="Fem" _msthash="312611" _msttexthash="101647">Feminino</option>
+				              		</select>
+				              		<div class="invalid-feedback" _msthash="2154061" _msttexthash="685542" _msthidden="1">
+			                			Selecione o sexo válido
+			              			</div>
+				            	</div>
+
+			            	<div class="col-12">
+			              		<label for="email" class="form-label" _msthash="2296580" _msttexthash="280358">E-mail</label>
+			              		<input type="email" class="form-control" id="email" placeholder="você@exemplo.com" _mstplaceholder="274417" required="" name="Email">
+			              		<div class="invalid-feedback" _msthash="2153541" _msttexthash="1993589" _msthidden="1">
+			                		Insira um endereço de e-mail válido para atualizações de envio
+			              		</div>
+			            	</div>
+
+			            	<div class="col-12">
+			              		<label for="address" class="form-label" _msthash="2296827" _msttexthash="133848">Endereço</label>
+			              		<input type="text" class="form-control" id="address" placeholder="Rua Principal, lote 99" required="" _mstplaceholder="268541" name="End">
+			              		<div class="invalid-feedback" _msthash="2153762" _msttexthash="926601" _msthidden="1">
+			                		Insira seu endereço
+			              		</div>
+			            	</div>
+
+			            	<div class="col-12">
+			              		<label for="address2" class="form-label" _msthash="2297074" _msttexthash="385125">Complemento <span class="text-muted" _istranslated="1">(Opcional)</span></label>
+			              		<input type="text" class="form-control" id="address2" placeholder="Casa 00, apt 00" _mstplaceholder="433056" name="Comp">
+			            	</div>
+
+			            	<div class="col-md-5" style="margin-left: 8%;">
+			              		<label for="country" class="form-label" _msthash="2297321" _msttexthash="60047">País</label>
+			              		<select class="form-select" id="country" required="" name="Paises">
+			                		<option value="" _msthash="312611" _msttexthash="101647">Escolher...</option>
+			                		<optgroup label="América">
+			                			<option _msthash="312793" _msttexthash="203996" value="Antiga e Barbuda">Antiga e Barbuda</option>
+			                			<option _msthash="312793" _msttexthash="203996" value="Argentina">Argentina</option>
+			                			<option _msthash="312793" _msttexthash="203996" value="Bahamas">Bahamas</option>
+			                			<option _msthash="312793" _msttexthash="203996" value="Barbados">Barbados</option>
+			                			<option _msthash="312793" _msttexthash="203996" value="Belize">Belize</option>
+			                			<option _msthash="312793" _msttexthash="203996" value="Bolivia">Bolívia</option>
+			                			<option _msthash="312793" _msttexthash="203996" value="Brasil">Brasil</option>
+			                			<option _msthash="312793" _msttexthash="203996" value="Canada">Canadá</option>
+			                			<option _msthash="312793" _msttexthash="203996" value="Chile">Chile</option>
+			                			<option _msthash="312793" _msttexthash="203996" value="Colombia">Colômbia</option>
+			                			<option _msthash="312793" _msttexthash="203996" value="Costa Rica">Costa Rica</option>
+			                			<option _msthash="312793" _msttexthash="203996" value="Cuba">Cuba</option>
+			                			<option _msthash="312793" _msttexthash="203996" value="Dominica">Dominica</option>
+			                			<option _msthash="312793" _msttexthash="203996" value="Equador">Equador</option>
+			                			<option _msthash="312793" _msttexthash="203996" value="Estados Unidos">Estados Unidos</option>
+			                			<option _msthash="312793" _msttexthash="203996" value="Granada">Granada</option>
+			                			<option _msthash="312793" _msttexthash="203996" value="Guatemala">Guatemala</option>
+			                			<option _msthash="312793" _msttexthash="203996" value="Guiana">Guiana</option>
+			                			<option _msthash="312793" _msttexthash="203996" value="Haiti">Haiti</option>
+			                			<option _msthash="312793" _msttexthash="203996" value="Honduras">Honduras</option>
+			                			<option _msthash="312793" _msttexthash="203996" value="Jamaica">Jamaica</option>
+			                			<option _msthash="312793" _msttexthash="203996" value="Mexico">México</option>
+			                			<option _msthash="312793" _msttexthash="203996" value="Nicaragua">Nicarágua</option>
+			                			<option _msthash="312793" _msttexthash="203996" value="Panama">Panamá</option>
+			                			<option _msthash="312793" _msttexthash="203996" value="Paraguai">Paraguai</option>
+			                			<option _msthash="312793" _msttexthash="203996" value="Peru">Peru</option>
+			                			<option _msthash="312793" _msttexthash="203996" value="Republica Dominicana">República Dominicana</option>
+			                			<option _msthash="312793" _msttexthash="203996" value="Salvador">Salvador</option>
+			                			<option _msthash="312793" _msttexthash="203996" value="Santa Lucia">Santa Lúcia</option>
+			                			<option _msthash="312793" _msttexthash="203996" value="Sao Cristovao e Neves">São Cristóvão e Neves</option>
+			                			<option _msthash="312793" _msttexthash="203996" value="Sao Vincente e Granadinhas">São Vincente e Granadinas</option>
+			                			<option _msthash="312793" _msttexthash="203996" value="Suriname">Suriname</option>
+			                			<option _msthash="312793" _msttexthash="203996" value="Trindade e Tobago">Trindade e Tobago</option>
+			                			<option _msthash="312793" _msttexthash="203996" value="Uruguai">Uruguai</option>
+			                			<option _msthash="312793" _msttexthash="203996" value="Venezuela">Venezuela</option> 
+			                		</optgroup>
+			                		<optgroup label="Ásia">
+			                			<option _msthash="312793" _msttexthash="203996" value="Afeganistão">Afeganistão</option>
+			                			<option _msthash="312793" _msttexthash="203996">Arábia Saudita</option>
+			                			<option _msthash="312793" _msttexthash="203996">Arménia</option>
+			                			<option _msthash="312793" _msttexthash="203996">Azerbaijão</option>
+			                			<option _msthash="312793" _msttexthash="203996">Bangladexe</option>
+			                			<option _msthash="312793" _msttexthash="203996">Barém</option>
+			                			<option _msthash="312793" _msttexthash="203996">Brunei</option>
+			                			<option _msthash="312793" _msttexthash="203996">Butão</option>
+			                			<option _msthash="312793" _msttexthash="203996">Camboja</option>
+			                			<option _msthash="312793" _msttexthash="203996">Catar</option>
+			                			<option _msthash="312793" _msttexthash="203996">Cazaquistão</option>
+			                			<option _msthash="312793" _msttexthash="203996">China</option>
+			                			<option _msthash="312793" _msttexthash="203996">Coreia do Norte</option>
+			                			<option _msthash="312793" _msttexthash="203996">Coreia do Sul</option>
+			                			<option _msthash="312793" _msttexthash="203996">Cuaite</option>
+			                			<option _msthash="312793" _msttexthash="203996">Emirados Árabes Unidos</option>
+			                			<option _msthash="312793" _msttexthash="203996">Estado da Palestina</option>
+			                			<option _msthash="312793" _msttexthash="203996">Filipinas</option>
+			                			<option _msthash="312793" _msttexthash="203996">Geórgia</option>
+			                			<option _msthash="312793" _msttexthash="203996">Lémen</option>
+			                			<option _msthash="312793" _msttexthash="203996">Índia</option>
+			                			<option _msthash="312793" _msttexthash="203996">Indonésia</option>
+			                			<option _msthash="312793" _msttexthash="203996">Irão</option>
+			                			<option _msthash="312793" _msttexthash="203996">Iraque</option>
+			                			<option _msthash="312793" _msttexthash="203996">Israel</option>
+			                			<option _msthash="312793" _msttexthash="203996">Japão</option>
+			                			<option _msthash="312793" _msttexthash="203996">Jodânia</option>
+			                			<option _msthash="312793" _msttexthash="203996">Laus</option>
+			                			<option _msthash="312793" _msttexthash="203996">Líbano</option>
+			                			<option _msthash="312793" _msttexthash="203996">Malásia</option>
+			                			<option _msthash="312793" _msttexthash="203996">Maldivas</option>
+			                			<option _msthash="312793" _msttexthash="203996">Nianmar</option>
+			                			<option _msthash="312793" _msttexthash="203996">Mongólia</option>
+			                			<option _msthash="312793" _msttexthash="203996">Nepal</option>
+			                			<option _msthash="312793" _msttexthash="203996">Omã</option>
+			                			<option _msthash="312793" _msttexthash="203996">Paquistão</option>
+			                			<option _msthash="312793" _msttexthash="203996">Quirguistão</option>
+			                			<option _msthash="312793" _msttexthash="203996">Singapura</option>
+			                			<option _msthash="312793" _msttexthash="203996">Síria</option>
+			                			<option _msthash="312793" _msttexthash="203996">Sri Lanca</option>
+			                			<option _msthash="312793" _msttexthash="203996">Tailândia</option>
+			                			<option _msthash="312793" _msttexthash="203996">Taiuã</option>
+			                			<option _msthash="312793" _msttexthash="203996">Tajiquistão</option>
+			                			<option _msthash="312793" _msttexthash="203996">Turcomenistão</option>
+			                			<option _msthash="312793" _msttexthash="203996">Turquia</option>
+			                			<option _msthash="312793" _msttexthash="203996">Usbequistão</option>
+			                			<option _msthash="312793" _msttexthash="203996">Vietname</option>
+			                		</optgroup>
+			                		<optgroup label="África">
+			                			<option _msthash="312793" _msttexthash="203996">África do Sul</option>
+			                			<option _msthash="312793" _msttexthash="203996">Angola</option>
+			                			<option _msthash="312793" _msttexthash="203996">Argélia</option>
+			                			<option _msthash="312793" _msttexthash="203996">Benim</option>
+			                			<option _msthash="312793" _msttexthash="203996">Botsuana</option>
+			                			<option _msthash="312793" _msttexthash="203996">Burquina Faso</option>
+			                			<option _msthash="312793" _msttexthash="203996">Burúndi</option>
+			                			<option _msthash="312793" _msttexthash="203996">Cabo Verde</option>
+			                			<option _msthash="312793" _msttexthash="203996">Camarôes</option>
+			                			<option _msthash="312793" _msttexthash="203996">Chade</option>
+			                			<option _msthash="312793" _msttexthash="203996">Comores</option>
+			                			<option _msthash="312793" _msttexthash="203996">Congo-Brazzaville</option>
+			                			<option _msthash="312793" _msttexthash="203996">Costa do Marfim</option>
+			                			<option _msthash="312793" _msttexthash="203996">Egito</option>
+			                			<option _msthash="312793" _msttexthash="203996">Eritreia</option>
+			                			<option _msthash="312793" _msttexthash="203996">Essuatíni</option>
+			                			<option _msthash="312793" _msttexthash="203996">Etiópia</option>
+			                			<option _msthash="312793" _msttexthash="203996">Gabão</option>
+			                			<option _msthash="312793" _msttexthash="203996">Gâmbia</option>
+			                			<option _msthash="312793" _msttexthash="203996">Gana</option>
+			                			<option _msthash="312793" _msttexthash="203996">Guiné</option>
+			                			<option _msthash="312793" _msttexthash="203996">Guiné Equatorial</option>
+			                			<option _msthash="312793" _msttexthash="203996">Guiné-Bissau</option>
+			                			<option _msthash="312793" _msttexthash="203996">Jibuti</option>
+			                			<option _msthash="312793" _msttexthash="203996">Lesoto</option>
+			                			<option _msthash="312793" _msttexthash="203996">Libéria</option>
+			                			<option _msthash="312793" _msttexthash="203996">Líbia</option>
+			                			<option _msthash="312793" _msttexthash="203996">Madagáscar</option>
+			                			<option _msthash="312793" _msttexthash="203996">Maláui</option>
+			                			<option _msthash="312793" _msttexthash="203996">Mali</option>
+			                			<option _msthash="312793" _msttexthash="203996">Marrocos</option>
+			                			<option _msthash="312793" _msttexthash="203996">Maurícia</option>
+			                			<option _msthash="312793" _msttexthash="203996">Mauritânia</option>
+			                			<option _msthash="312793" _msttexthash="203996">Moçambique</option>
+			                			<option _msthash="312793" _msttexthash="203996">Namíbia</option>
+			                			<option _msthash="312793" _msttexthash="203996">Níger</option>
+			                			<option _msthash="312793" _msttexthash="203996">Nigéria</option>
+			                			<option _msthash="312793" _msttexthash="203996">Quénia</option>
+			                			<option _msthash="312793" _msttexthash="203996">Rebública Centro-Africana</option>
+			                			<option _msthash="312793" _msttexthash="203996">República Democrática do Congo</option>
+			                			<option _msthash="312793" _msttexthash="203996">Ruanda</option>
+			                			<option _msthash="312793" _msttexthash="203996">São Tomé e Principe</option>
+			                			<option _msthash="312793" _msttexthash="203996">Seicheles</option>
+			                			<option _msthash="312793" _msttexthash="203996">Senegal</option>
+			                			<option _msthash="312793" _msttexthash="203996">Serra Leoa</option>
+			                			<option _msthash="312793" _msttexthash="203996">Somália</option>
+			                			<option _msthash="312793" _msttexthash="203996">Sudão</option>
+			                			<option _msthash="312793" _msttexthash="203996">Sudão do Sul</option>
+			                			<option _msthash="312793" _msttexthash="203996">Tanzânia</option>
+			                			<option _msthash="312793" _msttexthash="203996">Togo</option>
+			                			<option _msthash="312793" _msttexthash="203996">Tunísia</option>
+			                			<option _msthash="312793" _msttexthash="203996">Uganda</option>
+			                			<option _msthash="312793" _msttexthash="203996">Zâmbia</option>
+			                			<option _msthash="312793" _msttexthash="203996">Zimbábue</option>
+			                		</optgroup>
+			                		<optgroup label="Europa">
+				                		<option _msthash="312793" _msttexthash="203996">Albânia</option>
+				                		<option _msthash="312793" _msttexthash="203996">Alemanha</option>
+										<option _msthash="312793" _msttexthash="203996">Andorra</option>
+										<option _msthash="312793" _msttexthash="203996">Áustria</option>
+										<option _msthash="312793" _msttexthash="203996">Bélgica</option>
+										<option _msthash="312793" _msttexthash="203996">Bielorrússia</option>
+										<option _msthash="312793" _msttexthash="203996">Bósnia e Herzagonia</option>
+										<option _msthash="312793" _msttexthash="203996">Bulgária</option>
+										<option _msthash="312793" _msttexthash="203996">Chipre</option>
+										<option _msthash="312793" _msttexthash="203996">Cosovo</option>
+										<option _msthash="312793" _msttexthash="203996">Croácia</option>
+										<option _msthash="312793" _msttexthash="203996">Dinamarca</option>
+										<option _msthash="312793" _msttexthash="203996">Eslováquia</option>
+										<option _msthash="312793" _msttexthash="203996">Eslovênia</option>
+										<option _msthash="312793" _msttexthash="203996">Espanha</option>
+										<option _msthash="312793" _msttexthash="203996">Estônia</option>
+										<option _msthash="312793" _msttexthash="203996">Finlândia</option>
+										<option _msthash="312793" _msttexthash="203996">França</option>
+										<option _msthash="312793" _msttexthash="203996">Grécia</option>
+										<option _msthash="312793" _msttexthash="203996">Hungria</option>
+										<option _msthash="312793" _msttexthash="203996">Irlanda</option>
+										<option _msthash="312793" _msttexthash="203996">Islândia</option>
+										<option _msthash="312793" _msttexthash="203996">Itália</option>
+										<option _msthash="312793" _msttexthash="203996">Letónia</option>
+										<option _msthash="312793" _msttexthash="203996">Listenstaine</option>
+										<option _msthash="312793" _msttexthash="203996">Lituânia</option>
+										<option _msthash="312793" _msttexthash="203996">Luxemburgo</option>
+										<option _msthash="312793" _msttexthash="203996">Macedônia do Norte</option>
+										<option _msthash="312793" _msttexthash="203996">Malta</option>
+										<option _msthash="312793" _msttexthash="203996">Moldávia</option>
+										<option _msthash="312793" _msttexthash="203996">Monaco</option>
+										<option _msthash="312793" _msttexthash="203996">Montenegro</option>
+										<option _msthash="312793" _msttexthash="203996">Noruega</option>
+										<option _msthash="312793" _msttexthash="203996">Países baixos</option>
+										<option _msthash="312793" _msttexthash="203996">Polónia</option>
+										<option _msthash="312793" _msttexthash="203996">Portugal</option>
+										<option _msthash="312793" _msttexthash="203996">Reino Unido</option>
+										<option _msthash="312793" _msttexthash="203996">República Checa</option>
+										<option _msthash="312793" _msttexthash="203996">Roménia</option>
+										<option _msthash="312793" _msttexthash="203996">Rússia</option>
+										<option _msthash="312793" _msttexthash="203996">São Marinho</option>
+										<option _msthash="312793" _msttexthash="203996">Sérvia</option>
+										<option _msthash="312793" _msttexthash="203996">Suécia</option>
+										<option _msthash="312793" _msttexthash="203996">Suíça</option>
+										<option _msthash="312793" _msttexthash="203996">Ucrânia</option>
+										<option _msthash="312793" _msttexthash="203996">Vaticano</option>
+									</optgroup>
+			              		</select>
+			              		<div class="invalid-feedback" _msthash="2154061" _msttexthash="685542" _msthidden="1">
+			                		Selecione um país válido
+			              		</div>
+			            	</div>
+
+			            	<div class="col-md-5">
+			              		<label for="CPF" class="form-label" _msthash="2297815" _msttexthash="41496">Caixa Postal/CPF</label>
+			              		<input type="text" class="form-control" id="CPF" placeholder="" required="" name="Caixa">
+			              		<div class="invalid-feedback" _msthash="2154646" _msttexthash="302874" _msthidden="1">
+			                		Caixa Postal obrigatório
+			              		</div>
+			            	</div>
+			          	</div>
+
+			          	<hr class="my-4">
+
+			          	<div class="form-check">
+			            	<input type="checkbox" class="form-check-input" id="same-address">
+			            	<label class="form-check-label" for="same-address" _msthash="1885065" _msttexthash="2073149">Endereço de envio é o mesmo que meu endereço de cobrança</label>
+			          	</div>
+
+			          	<div class="form-check">
+			            	<input type="checkbox" class="form-check-input" id="save-info">
+			            	<label class="form-check-label" for="save-info" _msthash="1885312" _msttexthash="1444677">Guarde essas informações para a próxima vez</label>
+			          	</div>
+
+			          	<div class="form-check">
+			            	<input type="checkbox" class="form-check-input" id="save-info">
+			            	<label class="form-check-label" for="save-info" _msthash="1885312" _msttexthash="1444677">Pessoa especial</label>
+			          	</div>
+
+			          	<hr class="my-4">
+
+			        	<button class="w-100 btn btn-primary btn-lg" type="button" _msthash="1634243" _msttexthash="232921" onclick="home()">Cadastrar-se</button>
+	        		</form>
+	      		</div>
+	      	</main>
+	    </center>
+    </div>
+
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1" _msthash="532272" _msttexthash="410033">© Horizon Airlines - 2021</p>
+  </footer>
+</div>
+
+
+    <script src="/docs/5.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+      <script src="form-validation.js"></script>
+
+      <!-- Links para JS executar Bootstrap -->
+
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+	<!-- JS para O botão -->
+
+	<script type="text/javascript">
+
+		//Ser funcional o botão de cadastro
+
+		//Variáveis
+		var nome;
+		var sobrenome;
+		var usuario;
+		var idade;
+		var sexo;
+		var email;
+		var endereco;
+		var complemento;
+		var pais;
+		var cpf;
+		var responsa;
+
+		//Processamento de Dados
+
+		function checagem() {
+			idade = document.FormCad.Anos.value;
+
+			//Retorno
+			if (idade < 18) {
+				responsa = window.prompt("Nome do responsável obrigatório");
+
+				if (idade > 17) {
+					responsa = (nome + " " + sobrenome);
+				}
+			}
+			else {
+				responsa = (nome + " " + sobrenome);
+			}
+		}
+
+		function home() {
+			nome = document.FormCad.Name.value;
+			sobrenome = document.FormCad.LastName.value;
+			usuario = document.FormCad.User.value;
+			idade = document.FormCad.Anos.value;
+			sexo = document.FormCad.Sexo.value;
+			email = document.FormCad.Email.value;
+			endereco = document.FormCad.End.value;
+			complemento = document.FormCad.Comp.value;
+			pais = document.FormCad.Paises.value;
+			cpf = document.FormCad.Caixa.value;
+
+			//Retono
+			if ((idade < 18 && responsa == null) || (idade < 18 && responsa == "")) {
+				window.alert("Menor de Idade sem informação de um responsável!");
+			}
+			if (nome == '' || sexo == '' || sobrenome == '' || usuario == '' || idade == '' || email == '' || endereco == '' || cpf == '' || pais == '' || responsa == null || responsa == "") {
+				window.alert('Cadastro Inválido');
+			}
+			else {
+				alert("Cadastro feito com sucesso!");
+				window.open("index.html", "_top");
+			}
+		}
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,1438 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+
+	<title>Horizon Airlines - Voo</title>
+
+	<link rel="shortcut icon" href="Imagens/logopng.png">
+
+	<style type="text/css">
+		
+		.navbar label a:hover{
+			text-decoration: underline;
+			text-decoration-color: #11F69636;
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<!-- ChatBot -->
+
+	<script src="https://unpkg.com/blip-chat-widget" type="text/javascript">
+	</script>
+	<script>
+    	(function () {
+      		window.onload = function () {
+        	new BlipChat()
+        	.withAppKey('aG9yaXpvbmJvdDpkNWRjOThlYS1hZGM2LTQwOTctYTM3Zi04ODVmODI1ZDQ0MDE=')
+        	.withButton({"color":"#11F696","icon":""})
+        	.withCustomCommonUrl('https://daniel-rodrigues-yo836.chat.blip.ai/')
+        	.build();
+        	}
+  		})();
+	</script>                     
+
+<!------------------------------------------------------------------------------------------------------------->
+
+	<!-- NavBar -->
+
+	<div class="p-0" style="background-color: #11F69636;" id="minnav">
+
+		<!-- Informações da NavBar -->
+
+		<div class="d-flex bd-highlight mb-3">
+			<div class="p-2 me-auto bd-highlight" id="Nav"><a class="nav-link p-0 text-black" href="index.html">← Início</a></div>
+			<div class="p-2 bd-highlight" id="Nav"><a href="Contatos.html" class="nav-link p-0 text-black">Contatos</a></div>
+			<div class="p-2 bd-highlight" id="Nav">|</div>
+			<div class="p-2 bd-highlight" id="Nav"><a href="Sobre_Horizon.html" class="nav-link p-0 text-black">Sobre Nós</a></div>
+			<div class="p-2 bd-highlight" id="Nav">|</div>
+			<div class="p-2 bd-highlight" id="Nav"><a href="Parceiros.html" class="nav-link p-0 text-black">Parceiros</a></div>
+		</div>
+	</div>
+
+<!------------------------------------------------------------------------------------------------------------->
+
+	<!-- Navbar Principal -->
+
+	<nav class="navbar navbar-expand-lg navbar-light p-4">
+  		<div class="container-fluid">
+    		<a class="navbar-brand" href="index.html"><img src="Imagens/logohorizon.jpg"></a>
+    		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      			<span class="navbar-toggler-icon"></span>
+    		</button>
+    		<div class="collapse navbar-collapse" id="navbarNavDropdown">
+      			<ul class="navbar-nav">
+        			<li class="nav-item">
+          				<a class="nav-link active" aria-current="page" href="Passagens.html">Passagens Aéreas</a>
+        			</li>
+        			<li class="nav-item">
+          				<a class="nav-link" href="Ofertas.html">Ofertas e Destinos</a>
+        			</li>
+        			<li class="nav-item dropdown">
+          				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            			Central e Atendimento
+          				</a>
+			          		<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+			            		<li><a class="dropdown-item" href="Serv_Horizon.html">Serviços Horizon</a></li>
+			            		<li><a class="dropdown-item" href="Duvidas.html">Central de Dúvidas</a></li>
+			            		<li><a class="dropdown-item" href="Sobre_Horizon.html">Sobre a Horizon Airlines</a></li>
+		          			</ul>
+          				
+      			</ul>
+    		</div>
+  		</div>
+  		<label class="nav-link fw-normal" for="id_login" style="color: gray; font-size: 21px; cursor: pointer;"><a href="Login.html" class="nav-link p-0 text-black">Login</a></label>
+  		<a href="Login.html"><img src="Imagens/logologin.png" id=id_login style="width: 40px; height: auto;"></a>
+	</nav>
+
+<!------------------------------------------------------------------------------------------------------------->
+
+	<!-- Programação de Viagem -->
+	<div class="p-3 mb-2 bg-light text-dark">
+		<form name="progvoo" action="" method="post">
+			<center><h1>Programação de Viagem</h1></center><br><br>
+
+			<div class="progress">
+	  			<div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+			</div>
+
+			<p style="margin: 60px;" class="display-6">Escolha sua Passagem:</p>
+
+
+			<table class="table border-secondary" name="tb">
+			  <tbody>
+			    <tr style="background-color: #11F69613;">
+			      <td scope="row"><br><b style="font-size: 20px; font-family: century gothic,sans-serif;">Horário de Saída:</b><br><div class="fs-5 fw-light">10h35</div><br></td>
+			      <td><br><b style="font-size: 20px; font-family: century gothic,sans-serif;">Horário de Chegada:</b><br><div class="fs-5 fw-light">12h</div><br></td>
+			      <td><br><b style="font-size: 20px; font-family: century gothic,sans-serif;">Duração do Voo:</b><br><div class="fs-5 fw-light">1 Hora e 25 Min</div><br></td>
+			      <td><br><b style="font-size: 20px; font-family: century gothic,sans-serif;">Preço:</b><br><div class="fs-5 fw-light">R$2500</div><br></td>
+			      
+
+			      <td><br><center>
+
+			      	<!-- Button trigger modal -->
+					<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="margin: 10px; padding: 13px;">
+					  Escolher
+					</button>
+
+					<!-- Modal -->
+					<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+					  <div class="modal-dialog">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="h2" id="staticBackdropLabel">Escolha de Serviço</h5>
+					        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					      </div>
+					      <div class="modal-body fs-5 fw-light">
+					        Qual dos seguintes serviços você quer acrescentar à sua viagem?
+					      </div>
+
+						   <div class="form-check m-2 mx-5">
+								  <input class="form-check-input" type="checkbox" id="flexCheckDefault1" name="op1">
+								  <label class="form-check-label" for="flexCheckDefault1">
+								    TV (R$ 80)
+								  </label>
+							</div>
+							<div class="form-check m-2 mx-5">
+								  <input class="form-check-input" type="checkbox" id="flexCheckChecked1" name="op2">
+								  <label class="form-check-label" for="flexCheckChecked1">
+								    Assento Executivo (R$ 1100)
+								  </label>
+							</div>
+							<div class="form-check m-2 mx-5">
+								  <input class="form-check-input" type="checkbox" id="flexCheckDefault2" name="op3">
+								  <label class="form-check-label" for="flexCheckDefault2">
+								    Serviço de Internet (R$ 25)
+								  </label>
+							</div>
+							<div class="form-check m-2 mx-5">
+								  <input class="form-check-input" type="checkbox" id="flexCheckChecked2" name="op4">
+								  <label class="form-check-label" for="flexCheckChecked2">
+								    Moon Voo (R$ 20)
+								  </label>
+							</div>
+							<div class="form-check m-2 mx-5">
+								  <input class="form-check-input" type="checkbox" id="flexCheckDefault3" name="op5">
+								  <label class="form-check-label" for="flexCheckDefault3">
+								    Comida Gourmet (R$ 100)
+								  </label>
+							</div>
+							<div class="form-check m-2 mx-5">
+								  <input class="form-check-input" type="checkbox" id="flexCheckChecked3" name="op6">
+								  <label class="form-check-label" for="flexCheckChecked3">
+								    Full Horizon (R$ 2000)
+								  </label>
+							</div>
+
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+					        <button type="button" class="btn btn-success" onclick="preco1()" data-bs-dismiss="modal">Selecionar</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+
+			      </center><br></td>
+
+
+			    </tr>
+			    <tr style="background-color: #11F69613;">
+			       <td scope="row"><br><b style="font-size: 20px; font-family: century gothic,sans-serif;">Horário de Saída:</b><br><div class="fs-5 fw-light">13h25</div><br></td>
+			      <td><br><b style="font-size: 20px; font-family: century gothic,sans-serif;">Horário de Chegada:</b><br><div class="fs-5 fw-light">14h50</div><br></td>
+			      <td><br><b style="font-size: 20px; font-family: century gothic,sans-serif;">Duração do Voo:</b><br><div class="fs-5 fw-light">1 Hora e 25 Min</div><br></td>
+			      <td><br><b style="font-size: 20px; font-family: century gothic,sans-serif;">Preço:</b><br><div class="fs-5 fw-light">R$2600</div></td>
+			      
+			      <td><br><center>
+
+			      	<!-- Button trigger modal -->
+					<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop2" style="margin: 10px; padding: 13px;">
+					  Escolher
+					</button>
+
+					<!-- Modal -->
+					<div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+					  <div class="modal-dialog">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="h2" id="staticBackdropLabel">Escolha de Serviço</h5>
+					        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					      </div>
+					      <div class="modal-body fs-5 fw-light">
+					        Qual dos seguintes serviços você quer acrescentar à sua viagem?
+					      </div>
+
+						   <div class="form-check m-2 mx-5">
+								  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault4"name="op7">
+								  <label class="form-check-label" for="flexCheckDefault4">
+								    TV (R$ 80)
+								  </label>
+							</div>
+							<div class="form-check m-2 mx-5">
+								  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked4" name="op8">
+								  <label class="form-check-label" for="flexCheckChecked4">
+								    Assento Executivo (R$ 1100)
+								  </label>
+							</div>
+							<div class="form-check m-2 mx-5">
+								  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault5" name="op9">
+								  <label class="form-check-label" for="flexCheckDefault5">
+								    Serviço de Internet (R$ 25)
+								  </label>
+							</div>
+							<div class="form-check m-2 mx-5">
+								  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked5" name="op10">
+								  <label class="form-check-label" for="flexCheckChecked5">
+								    Moon Voo (R$ 20)
+								  </label>
+							</div>
+							<div class="form-check m-2 mx-5">
+								  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault6" name="op11">
+								  <label class="form-check-label" for="flexCheckDefault6">
+								    Comida Gourmet (R$ 100)
+								  </label>
+							</div>
+							<div class="form-check m-2 mx-5">
+								  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked6" name="op12">
+								  <label class="form-check-label" for="flexCheckChecked6">
+								    Full Horizon (R$ 2000)
+								  </label>
+							</div>
+
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+					        <button type="button" class="btn btn-success" onclick="preco2()" data-bs-dismiss="modal">Selecionar</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+
+			      </center><br></td>
+
+			    </tr>
+			   <tr style="background-color: #11F69613;">
+			       <td scope="row"><br><b style="font-size: 20px; font-family: century gothic,sans-serif;">Horário de Saída:</b><br><div class="fs-5 fw-light">05h00</div><br></td>
+			      <td><br><b style="font-size: 20px; font-family: century gothic,sans-serif;">Horário de Chegada:</b><br><div class="fs-5 fw-light">09h50</div><br></td>
+			      <td><br><b style="font-size: 20px; font-family: century gothic,sans-serif;">Duração do Voo:</b><br><div class="fs-5 fw-light">4 Horas e 50 Min</div><br></td>
+			      <td><br><b style="font-size: 20px; font-family: century gothic,sans-serif;">Preço:</b><br><div class="fs-5 fw-light">R$1300</div></td>
+			     
+			      <td><br><center>
+
+			      	<!-- Button trigger modal -->
+					<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop3" style="margin: 10px; padding: 13px;">
+					  Escolher
+					</button>
+
+					<!-- Modal -->
+					<div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+					  <div class="modal-dialog">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="h2" id="staticBackdropLabel">Escolha de Serviço</h5>
+					        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					      </div>
+					      <div class="modal-body fs-5 fw-light">
+					        Qual dos seguintes serviços você quer acrescentar à sua viagem?
+					      </div>
+
+						   <div class="form-check m-2 mx-5">
+								  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault7" name="op13">
+								  <label class="form-check-label" for="flexCheckDefault7">
+								    TV (R$ 80)
+								  </label>
+							</div>
+							<div class="form-check m-2 mx-5">
+								  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked7" name="op14">
+								  <label class="form-check-label" for="flexCheckChecked7">
+								    Assento Executivo (R$ 1100)
+								  </label>
+							</div>
+							<div class="form-check m-2 mx-5">
+								  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault8" name="op15">
+								  <label class="form-check-label" for="flexCheckDefault8">
+								    Serviço de Internet (R$ 25)
+								  </label>
+							</div>
+							<div class="form-check m-2 mx-5">
+								  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked8" name="op16">
+								  <label class="form-check-label" for="flexCheckChecked8">
+								    Moon Voo (R$ 20)
+								  </label>
+							</div>
+							<div class="form-check m-2 mx-5">
+								  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault9" name="op17">
+								  <label class="form-check-label" for="flexCheckDefault9">
+								    Comida Gourmet (R$ 100)
+								  </label>
+							</div>
+							<div class="form-check m-2 mx-5">
+								  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked9" name="op18">
+								  <label class="form-check-label" for="flexCheckChecked9">
+								    Full Horizon (R$ 2000)
+								  </label>
+							</div>
+
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+					        <button type="button" class="btn btn-success" onclick="preco3()" data-bs-dismiss="modal">Selecionar</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+
+			      </center><br></td>
+
+			    </tr>
+			   <tr style="background-color: #11F69613;">
+			       <td scope="row"><br><b style="font-size: 20px; font-family: century gothic,sans-serif;">Horário de Saída:</b><br><div class="fs-5 fw-light">06h30</div><br></td>
+			      <td><br><b style="font-size: 20px; font-family: century gothic,sans-serif;">Horário de Chegada:</b><br><div class="fs-5 fw-light">08h20</div><br></td>
+			      <td><br><b style="font-size: 20px; font-family: century gothic,sans-serif;">Duração do Voo:</b><br><div class="fs-5 fw-light">1 Hora e 50 Min</div><br></td>
+			      <td><br><b style="font-size: 20px; font-family: century gothic,sans-serif;">Preço:</b><br><div class="fs-5 fw-light">R$2100</div></td>
+			      
+			      <td><br><center>
+
+			      	<!-- Button trigger modal -->
+					<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop4" style="margin: 10px; padding: 13px;">
+					  Escolher
+					</button>
+
+					<!-- Modal -->
+					<div class="modal fade" id="staticBackdrop4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+					  <div class="modal-dialog">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="h2" id="staticBackdropLabel">Escolha de Serviço</h5>
+					        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					      </div>
+					      <div class="modal-body fs-5 fw-light">
+					        Qual dos seguintes serviços você quer acrescentar à sua viagem?
+					      </div>
+
+						   <div class="form-check m-2 mx-5">
+								  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault10" name="op19">
+								  <label class="form-check-label" for="flexCheckDefault10">
+								    TV (R$ 80)
+								  </label>
+							</div>
+							<div class="form-check m-2 mx-5">
+								  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked10" name="op20">
+								  <label class="form-check-label" for="flexCheckChecked10">
+								    Assento Executivo (R$ 1100)
+								  </label>
+							</div>
+							<div class="form-check m-2 mx-5">
+								  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault11" name="op21">
+								  <label class="form-check-label" for="flexCheckDefault11"> 
+								    Serviço de Internet (R$ 25)
+								  </label>
+							</div>
+							<div class="form-check m-2 mx-5">
+								  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked11" name="op22">
+								  <label class="form-check-label" for="flexCheckChecked11">
+								    Moon Voo (R$ 20)
+								  </label>
+							</div>
+							<div class="form-check m-2 mx-5">
+								  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault12" name="op23">
+								  <label class="form-check-label" for="flexCheckDefault12">
+								    Comida Gourmet (R$ 100)
+								  </label>
+							</div>
+							<div class="form-check m-2 mx-5">
+								  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked12" name="op24">
+								  <label class="form-check-label" for="flexCheckChecked12">
+								    Full Horizon (R$ 2000)
+								  </label>
+							</div>
+
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+					        <button type="button" class="btn btn-success" onclick="preco4()" data-bs-dismiss="modal">Selecionar</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+
+			      </center><br></td>
+
+			    </tr>
+			    <tr style="background-color: #11F69613;">
+			       <td scope="row"><br><b style="font-size: 20px; font-family: century gothic,sans-serif;">Horário de Saída:</b><br><div class="fs-5 fw-light">18h</div><br></td>
+			      <td><br><b style="font-size: 20px; font-family: century gothic,sans-serif;">Horário de Chegada:</b><br><div class="fs-5 fw-light">21h</div><br></td>
+			      <td><br><b style="font-size: 20px; font-family: century gothic,sans-serif;">Duração do Voo:</b><br><div class="fs-5 fw-light">3 Horas</div><br></td>
+			      <td><br><b style="font-size: 20px; font-family: century gothic,sans-serif;">Preço:</b><br><div class="fs-5 fw-light">R$1600</div></td>
+
+			      <td><br><center>
+
+			      	<!-- Button trigger modal -->
+					<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop5" style="margin: 10px; padding: 13px;">
+					  Escolher
+					</button>
+
+					<!-- Modal -->
+					<div class="modal fade" id="staticBackdrop5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+					  <div class="modal-dialog">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="h2" id="staticBackdropLabel">Escolha de Serviço</h5>
+					        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					      </div>
+					      <div class="modal-body fs-5 fw-light">
+					        Qual dos seguintes serviços você quer acrescentar à sua viagem?
+					      </div>
+
+						   <div class="form-check m-2 mx-5">
+								  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault13" name="op25">
+								  <label class="form-check-label" for="flexCheckDefault13">
+								    TV (R$ 80)
+								  </label>
+							</div>
+							<div class="form-check m-2 mx-5">
+								  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked13" name="op26">
+								  <label class="form-check-label" for="flexCheckChecked13">
+								    Assento Executivo (R$ 1100)
+								  </label>
+							</div>
+							<div class="form-check m-2 mx-5">
+								  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault14" name="op27">
+								  <label class="form-check-label" for="flexCheckDefault14">
+								    Serviço de Internet (R$ 25)
+								  </label>
+							</div>
+							<div class="form-check m-2 mx-5">
+								  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked14" name="op28">
+								  <label class="form-check-label" for="flexCheckChecked14">
+								    Moon Voo (R$ 20)
+								  </label>
+							</div>
+							<div class="form-check m-2 mx-5">
+								  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault15" name="op29">
+								  <label class="form-check-label" for="flexCheckDefault15">
+								    Comida Gourmet (R$ 100)
+								  </label> 
+							</div>
+							<div class="form-check m-2 mx-5">
+								  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked15" name="op30">
+								  <label class="form-check-label" for="flexCheckChecked15">
+								    Full Horizon (R$ 2000)
+								  </label>
+							</div>
+
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+					        <button type="button" class="btn btn-success" onclick="preco5()" data-bs-dismiss="modal">Selecionar</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+
+			      </center><br></td>
+
+			    </tr>
+			    <tr style="background-color: #11F69613;">
+			       <td scope="row"><br><b style="font-size: 20px; font-family: century gothic,sans-serif;">Horário de Saída:</b><br><div class="fs-5 fw-light">15h40</div><br></td>
+			      <td><br><b style="font-size: 20px; font-family: century gothic,sans-serif;">Horário de Chegada:</b><br><div class="fs-5 fw-light">17h</div><br></td>
+			      <td><br><b style="font-size: 20px; font-family: century gothic,sans-serif;">Duração do Voo:</b><br><div class="fs-5 fw-light">1 Hora e 20 Min</div><br></td>
+			      <td><br><b style="font-size: 20px; font-family: century gothic,sans-serif;">Preço:</b><br><div class="fs-5 fw-light">R$2800</div></td>
+			      
+			      <td><br><center>
+
+			      	<!-- Button trigger modal -->
+					<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop6" style="margin: 10px; padding: 13px;">
+					  Escolher
+					</button>
+
+					<!-- Modal -->
+					<div class="modal fade" id="staticBackdrop6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+					  <div class="modal-dialog">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="h2" id="staticBackdropLabel">Escolha de Serviço</h5>
+					        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					      </div>
+					      <div class="modal-body fs-5 fw-light">
+					        Qual dos seguintes serviços você quer acrescentar à sua viagem?
+					      </div>
+
+						   <div class="form-check m-2 mx-5">
+								  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault16" name="op31">
+								  <label class="form-check-label" for="flexCheckDefault16">
+								    TV (R$ 80)
+								  </label>
+							</div>
+							<div class="form-check m-2 mx-5">
+								  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked16" name="op32">
+								  <label class="form-check-label" for="flexCheckChecked16">
+								    Assento Executivo (R$ 1100)
+								  </label>
+							</div>
+							<div class="form-check m-2 mx-5">
+								  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault17" name="op33">
+								  <label class="form-check-label" for="flexCheckDefault17">
+								    Serviço de Internet (R$ 25)
+								  </label>
+							</div>
+							<div class="form-check m-2 mx-5">
+								  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked17" name="op34">
+								  <label class="form-check-label" for="flexCheckChecked17">
+								    Moon Voo (R$ 20)
+								  </label>
+							</div>
+							<div class="form-check m-2 mx-5">
+								  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault18" name="op35">
+								  <label class="form-check-label" for="flexCheckDefault18">
+								    Comida Gourmet (R$ 100)
+								  </label>
+							</div>
+							<div class="form-check m-2 mx-5">
+								  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked18" name="op36">
+								  <label class="form-check-label" for="flexCheckChecked18">
+								    Full Horizon (R$ 2000)
+								  </label>
+							</div>
+
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+					        <button type="button" class="btn btn-success" onclick="preco6()" data-bs-dismiss="modal">Selecionar</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+
+			      </center><br></td>
+
+			    </tr>
+			    <tr style="background-color: #11F69613;">
+			       <td scope="row"><br><b style="font-size: 20px; font-family: century gothic,sans-serif;">Horário de Saída:</b><br><div class="fs-5 fw-light">20h</div><br></td>
+			      <td><br><b style="font-size: 20px; font-family: century gothic,sans-serif;">Horário de Chegada:</b><br><div class="fs-5 fw-light">22h20</div><br></td>
+			      <td><br><b style="font-size: 20px; font-family: century gothic,sans-serif;">Duração do Voo:</b><br><div class="fs-5 fw-light">2 Horas e 20 Min</div><br></td>
+			      <td><br><b style="font-size: 20px; font-family: century gothic,sans-serif;">Preço:</b><br><div class="fs-5 fw-light">R$1900</div></td>
+			      
+			      <td><br><center>
+
+			      	<!-- Button trigger modal -->
+					<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop7" style="margin: 10px; padding: 13px;">
+					  Escolher
+					</button>
+
+					<!-- Modal -->
+					<div class="modal fade" id="staticBackdrop7" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+					  <div class="modal-dialog">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="h2" id="staticBackdropLabel">Escolha de Serviço</h5>
+					        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					      </div>
+					      <div class="modal-body fs-5 fw-light">
+					        Qual dos seguintes serviços você quer acrescentar à sua viagem?
+					      </div>
+
+						   <div class="form-check m-2 mx-5">
+								  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault19" name="op37">
+								  <label class="form-check-label" for="flexCheckDefault19">
+								    TV (R$ 80)
+								  </label>
+							</div>
+							<div class="form-check m-2 mx-5">
+								  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked19" name="op38">
+								  <label class="form-check-label" for="flexCheckChecked19">
+								    Assento Executivo (R$ 1100)
+								  </label>
+							</div>
+							<div class="form-check m-2 mx-5">
+								  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault20" name="op39">
+								  <label class="form-check-label" for="flexCheckDefault20">
+								    Serviço de Internet (R$ 25)
+								  </label> 
+							</div>
+							<div class="form-check m-2 mx-5">
+								  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked20" name="op40">
+								  <label class="form-check-label" for="flexCheckChecked20">
+								    Moon Voo (R$ 20)
+								  </label>
+							</div>
+							<div class="form-check m-2 mx-5">
+								  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault21" name="op41">
+								  <label class="form-check-label" for="flexCheckDefault22">
+								    Comida Gourmet (R$ 100)
+								  </label>
+							</div>
+							<div class="form-check m-2 mx-5">
+								  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked21" name="op42">
+								  <label class="form-check-label" for="flexCheckChecked21">
+								    Full Horizon (R$ 2000)
+								  </label>
+							</div>
+
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+					        <button type="button" class="btn btn-success" onclick="preco7()" data-bs-dismiss="modal">Selecionar</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+
+			      </center><br></td>
+
+			    </tr>
+			   <tr style="background-color: #11F69613;">
+			       <td scope="row"><br><b style="font-size: 20px; font-family: century gothic,sans-serif;">Horário de Saída:</b><br><div class="fs-5 fw-light">09h35</div><br></td>
+			      <td><br><b style="font-size: 20px; font-family: century gothic,sans-serif;">Horário de Chegada:</b><br><div class="fs-5 fw-light">12h35</div><br></td>
+			      <td><br><b style="font-size: 20px; font-family: century gothic,sans-serif;">Duração do Voo:</b><br><div class="fs-5 fw-light">3 Horas</div><br></td>
+			      <td><br><b style="font-size: 20px; font-family: century gothic,sans-serif;">Preço:</b><br><div class="fs-5 fw-light">R$1600</div></td>
+			      
+			      <td><br><center>
+
+			      	<!-- Button trigger modal -->
+					<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop8" style="margin: 10px; padding: 13px;">
+					  Escolher
+					</button>
+
+					<!-- Modal -->
+					<div class="modal fade" id="staticBackdrop8" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+					  <div class="modal-dialog">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="h2" id="staticBackdropLabel">Escolha de Serviço</h5>
+					        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					      </div>
+					      <div class="modal-body fs-5 fw-light">
+					        Qual dos seguintes serviços você quer acrescentar à sua viagem?
+					      </div>
+
+						   <div class="form-check m-2 mx-5">
+								  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault22" name="op43">
+								  <label class="form-check-label" for="flexCheckDefault22">
+								    TV (R$ 80)
+								  </label>
+							</div>
+							<div class="form-check m-2 mx-5">
+								  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked22" name="op44">
+								  <label class="form-check-label" for="flexCheckChecked22">
+								    Assento Executivo (R$ 1100)
+								  </label>
+							</div>
+							<div class="form-check m-2 mx-5">
+								  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault23" name="op45">
+								  <label class="form-check-label" for="flexCheckDefault23">
+								    Serviço de Internet (R$ 25)
+								  </label>
+							</div>
+							<div class="form-check m-2 mx-5">
+								  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked23" name="op46">
+								  <label class="form-check-label" for="flexCheckChecked23">
+								    Moon Voo (R$ 20)
+								  </label>
+							</div>
+							<div class="form-check m-2 mx-5">
+								  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault24" name="op47">
+								  <label class="form-check-label" for="flexCheckDefault24">
+								    Comida Gourmet (R$ 100)
+								  </label>
+							</div>
+							<div class="form-check m-2 mx-5">
+								  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked24" name="op48">
+								  <label class="form-check-label" for="flexCheckChecked24">
+								    Full Horizon (R$ 2000)
+								  </label>
+							</div>
+
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+					        <button type="button" class="btn btn-success" onclick="preco8()" data-bs-dismiss="modal">Selecionar</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+
+			      </center><br></td>
+
+			    </tr>
+			   <tr style="background-color: #11F69613;">
+			       <td scope="row"><br><b style="font-size: 20px; font-family: century gothic,sans-serif;">Horário de Saída:</b><br><div class="fs-5 fw-light">14h40</div><br></td>
+			      <td><br><b style="font-size: 20px; font-family: century gothic,sans-serif;">Horário de Chegada:</b><br><div class="fs-5 fw-light">16h</div><br></td>
+			      <td><br><b style="font-size: 20px; font-family: century gothic,sans-serif;">Duração do Voo:</b><br><div class="fs-5 fw-light">1 Hora 20 Min</div><br></td>
+			      <td><br><b style="font-size: 20px; font-family: century gothic,sans-serif;">Preço:</b><br><div class="fs-5 fw-light">R$2500</div></td>
+			      
+			      <td><br><center>
+
+			      	<!-- Button trigger modal -->
+					<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop9" style="margin: 10px; padding: 13px;">
+					  Escolher
+					</button>
+
+					<!-- Modal -->
+					<div class="modal fade" id="staticBackdrop9" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+					  <div class="modal-dialog">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="h2" id="staticBackdropLabel">Escolha de Serviço</h5>
+					        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					      </div>
+					      <div class="modal-body fs-5 fw-light">
+					        Qual dos seguintes serviços você quer acrescentar à sua viagem?
+					      </div>
+
+						   <div class="form-check m-2 mx-5">
+								  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault25" name="op49">
+								  <label class="form-check-label" for="flexCheckDefault25">
+								    TV (R$ 80)
+								  </label>
+							</div>
+							<div class="form-check m-2 mx-5">
+								  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked25" name="op50">
+								  <label class="form-check-label" for="flexCheckChecked25">
+								    Assento Executivo (R$ 1100)
+								  </label>
+							</div>
+							<div class="form-check m-2 mx-5">
+								  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault26" name="op51">
+								  <label class="form-check-label" for="flexCheckDefault26">
+								    Serviço de Internet (R$ 25)
+								  </label>
+							</div>
+							<div class="form-check m-2 mx-5">
+								  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked26" name="op52">
+								  <label class="form-check-label" for="flexCheckChecked26">
+								    Moon Voo (R$ 20)
+								  </label>
+							</div>
+							<div class="form-check m-2 mx-5">
+								  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault27" name="op53">
+								  <label class="form-check-label" for="flexCheckDefault27">
+								    Comida Gourmet (R$ 100)
+								  </label>
+							</div>
+							<div class="form-check m-2 mx-5">
+								  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked27" name="op54">
+								  <label class="form-check-label" for="flexCheckChecked27">
+								    Full Horizon (R$ 2000)
+								  </label>
+							</div>
+
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+					        <button type="button" class="btn btn-success" onclick="preco9()" data-bs-dismiss="modal">Selecionar</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+
+			      </center><br></td>
+
+			    </tr>
+			  </tbody>
+			</table><br><br>
+
+		</form>
+	
+		<center><button type="button" class="btn btn-secondary" onclick="gotopag1()">Anterior</button></center>
+	</div>
+
+	
+
+<!------------------------------------------------------------------------------------------------------------->
+
+	<!-- Rodapé -->
+	<div class="container">
+  		<footer class="py-5">
+    		<div class="row">
+      			<div class="col-2">
+        			<h5>Geral</h5>
+       				<ul class="nav flex-column">
+          				<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Voltar ao Topo</a></li>
+          				<li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted">Home</a></li>
+          				<li class="nav-item mb-2"><a href="Passagens.html" class="nav-link p-0 text-muted">Passagens</a></li>
+          				<li class="nav-item mb-2"><a href="Duvidas.html" class="nav-link p-0 text-muted">Dúvidas</a></li>
+          				<li class="nav-item mb-2"><a href="Sobre_Horizon.html" class="nav-link p-0 text-muted">Sobre Horizon</a></li>
+        			</ul>
+      			</div>
+
+	      		<div class="col-2">
+	        		<h5>Horizon</h5>
+	        		<ul class="nav flex-column">
+	          			<li class="nav-item mb-2"><a href="FrameWork/Companhia Horizon.pdf" class="nav-link p-0 text-muted">Wireframe</a></li>
+	          			<li class="nav-item mb-2"><a href="Contatos.html" class="nav-link p-0 text-muted">Contato</a></li>
+	          			<li class="nav-item mb-2"><a href="Parceiros.html" class="nav-link p-0 text-muted">Parceiros</a></li>
+
+
+	        		</ul>
+	      		</div>
+
+	      		<div class="col-2">
+	      		</div>
+
+	      		<div class="col-4 offset-1">
+	        		<form action="" method="post">
+	          			<h5>Se Inscreva para Avisos!</h5>
+	          			<p>Todas as notícias de voo, promoções e viagens na palma da sua mão.</p>
+	          			<div class="d-flex w-100 gap-2">
+	            			<label for="newsletter1" class="visually-hidden">Endereço de Email</label>
+	           				<input id="newsletter1" type="email" class="form-control" placeholder="Endereço de Email">
+	            			<button class="btn btn-primary" type="submit">Aceitar</button>
+	          			</div>
+        			</form><br>
+
+        			<center><h5>Criado Por:</h5>
+        			<p>Daniel Rodrigues da Rocha</p>
+        			<p>Davi Rodrigues da Rocha</p></center>
+      			</div>
+    		</div>
+
+    <div class="d-flex justify-content-between py-4 my-4 border-top container">
+    	<img src="Imagens/logohorizon.jpg">
+      <p class="ms-2" style="font-size: 13px;">© 2021 Horizon Airlines Brasil Rua Jonildo nº 999, CEP 99999-999 Brasília/DF CNPJ: 00.000.000/0000-00.<br>(Projeto desenvolvido durante o curso Front-End - SENAI GAMA)</p>
+      <ul class="list-unstyled d-flex">
+        <li class="ms-1"><a class="link-dark" href="https://twitter.com/"><img src="Imagens/Twitter.jpg" style="width: 30px; height: auto;"></a></li>
+        <li class="ms-1"><a class="link-dark" href="https://www.instagram.com/"><img src="Imagens/Insta.jpg" style="width: 30px; height: auto;"></a></li>
+        <li class="ms-1"><a class="link-dark" href="https://www.Facebook.com/"><img src="Imagens/Face.png" style="width: 30px; height: auto;"></a></li>
+      </ul>
+    </div>
+  </footer>
+</div>
+
+<!------------------------------------------------------------------------------------------------------------->
+
+
+	<!-- Código JavaScript: -->
+	<script type="text/javascript">
+
+		// DECLARAÇÕES:
+		var js_op1;
+		var js_op2;
+		var js_op3;
+		var js_op4;
+		var js_op5;
+		var js_op6;
+
+		var js_preco;
+		var js_porcentagem;
+		var js_vista;
+		var js_parcelado;
+
+
+		function preco1() {
+			
+		// ATRIBUIÇÃO:
+		var js_preco = 2500;
+
+		var js_op1 = (document.getElementById("flexCheckDefault1").checked);
+		var js_op2 = (document.getElementById("flexCheckChecked1").checked);
+		var js_op3 = (document.getElementById("flexCheckDefault2").checked);
+		var js_op4 = (document.getElementById("flexCheckChecked2").checked);
+		var js_op5 = (document.getElementById("flexCheckDefault3").checked);
+		var js_op6 = (document.getElementById("flexCheckChecked3").checked);
+
+		// CONDICIONAIS:
+
+		if (js_op1 == true) {
+
+			js_preco = (js_preco + 80);
+
+		}
+		if (js_op2 == true) {
+
+			js_preco = (js_preco + 1100);
+
+		}
+		if (js_op3 == true) {
+
+			js_preco = (js_preco + 25);
+
+		}
+		if (js_op4 == true) {
+
+			js_preco = (js_preco + 20);
+
+		}
+		if (js_op5 == true) {
+
+			js_preco = (js_preco + 100);
+
+		}
+		if (js_op6 == true) {
+
+			js_preco = (js_preco + 2000);
+
+		}
+
+		js_porcentagem = (js_preco * 0.10);
+		js_vista = (js_preco - js_porcentagem);
+		js_parcelado = (js_preco + js_porcentagem);
+	
+		document.write("<title>Compra Confirmada!</title>");
+		document.write("<center><h1 style='font-family: century gothic;'>Sua Compra foi Confirmada!</h1></center>");
+		document.write("<center><h2 style='font-family: century gothic;'>Boa Viagem!</h2></center>");
+		document.write("<center><img src='Imagens/logohorizon.jpg' style='width: 200px; height: auto;'></center><br><br>");
+
+		document.write("<center><table border='1px'><tr><th colspan='2' style='padding: 10px; font-family: century gothic; font-size: 23px;'>Tabela de Preços</th></tr><tr><th style='padding: 10px; font-family: century gothic; font-size: 19px;'>Preço da Passagem:</th><td style='padding: 10px; text-align: center; font-family: century gothic;'>R$", js_preco, "</td></tr>");
+		document.write("<tr><th style='padding: 10px; font-family: century gothic; font-size: 19px;'>Taxa de Parcelamento:</th><td style='padding: 10px; font-family: century gothic;'>10% Sobre o Preço</td></tr><tr><th style='padding: 10px; font-family: century gothic; font-size: 19px;'>Desconto À vista:</th><td style='padding: 10px; font-family: century gothic;'>10% Sobre o Preço</td></tr>");
+		document.write("<tr><th style='padding: 10px; font-family: century gothic; font-size: 19px;'>Valor Parcelado:</th><td style='padding: 10px; text-align: center; font-family: century gothic;'>R$", js_parcelado, "</td></tr>");
+		document.write("<tr><th style='padding: 10px; font-family: century gothic; font-size: 19px;'>Valor À Vista:</th><td style='padding: 10px; text-align: center; font-family: century gothic;'>R$", js_vista, "</td></tr></table><br><br>");
+		document.write("<a href='index.html'><button style='padding: 10px; font-size: 15px; font-family: century gothic; border: 1px solid; background-color: #11F69636; border-radius: 10px; cursor: pointer;'>Voltar à Página Principal</button></a>");
+
+
+		};
+
+		function preco2() {
+			
+		// ATRIBUIÇÃO:
+		var js_preco = 2600;
+
+		var js_op1 = (document.getElementById("flexCheckDefault4").checked);
+		var js_op2 = (document.getElementById("flexCheckChecked4").checked);
+		var js_op3 = (document.getElementById("flexCheckDefault5").checked);
+		var js_op4 = (document.getElementById("flexCheckChecked5").checked);
+		var js_op5 = (document.getElementById("flexCheckDefault6").checked);
+		var js_op6 = (document.getElementById("flexCheckChecked6").checked);
+
+		// CONDICIONAIS:
+
+		if (js_op1 == true) {
+
+			js_preco = (js_preco + 80);
+
+		}
+		if (js_op2 == true) {
+
+			js_preco = (js_preco + 1100);
+
+		}
+		if (js_op3 == true) {
+
+			js_preco = (js_preco + 25);
+
+		}
+		if (js_op4 == true) {
+
+			js_preco = (js_preco + 20);
+
+		}
+		if (js_op5 == true) {
+
+			js_preco = (js_preco + 100);
+
+		}
+		if (js_op6 == true) {
+
+			js_preco = (js_preco + 2000);
+
+		}
+
+		js_porcentagem = (js_preco * 0.10);
+		js_vista = (js_preco - js_porcentagem);
+		js_parcelado = (js_preco + js_porcentagem);
+	
+		document.write("<title>Compra Confirmada!</title>");
+		document.write("<center><h1 style='font-family: century gothic;'>Sua Compra foi Confirmada!</h1></center>");
+		document.write("<center><h2 style='font-family: century gothic;'>Boa Viagem!</h2></center>");
+		document.write("<center><img src='Imagens/logohorizon.jpg' style='width: 200px; height: auto;'></center><br><br>");
+
+		document.write("<center><table border='1px'><tr><th colspan='2' style='padding: 10px; font-family: century gothic; font-size: 23px;'>Tabela de Preços</th></tr><tr><th style='padding: 10px; font-family: century gothic; font-size: 19px;'>Preço da Passagem:</th><td style='padding: 10px; text-align: center; font-family: century gothic;'>R$", js_preco, "</td></tr>");
+		document.write("<tr><th style='padding: 10px; font-family: century gothic; font-size: 19px;'>Taxa de Parcelamento:</th><td style='padding: 10px; font-family: century gothic;'>10% Sobre o Preço</td></tr><tr><th style='padding: 10px; font-family: century gothic; font-size: 19px;'>Desconto À vista:</th><td style='padding: 10px; font-family: century gothic;'>10% Sobre o Preço</td></tr>");
+		document.write("<tr><th style='padding: 10px; font-family: century gothic; font-size: 19px;'>Valor Parcelado:</th><td style='padding: 10px; text-align: center; font-family: century gothic;'>R$", js_parcelado, "</td></tr>");
+		document.write("<tr><th style='padding: 10px; font-family: century gothic; font-size: 19px;'>Valor À Vista:</th><td style='padding: 10px; text-align: center; font-family: century gothic;'>R$", js_vista, "</td></tr></table><br><br>");
+		document.write("<a href='index.html'><button style='padding: 10px; font-size: 15px; font-family: century gothic; border: 1px solid; background-color: #11F69636; border-radius: 10px; cursor: pointer;'>Voltar à Página Principal</button></a>");
+
+		};
+
+		function preco3() {
+			
+		// ATRIBUIÇÃO:
+		var js_preco = 1300;
+
+		var js_op1 = (document.getElementById("flexCheckDefault7").checked);
+		var js_op2 = (document.getElementById("flexCheckChecked7").checked);
+		var js_op3 = (document.getElementById("flexCheckDefault8").checked);
+		var js_op4 = (document.getElementById("flexCheckChecked8").checked);
+		var js_op5 = (document.getElementById("flexCheckDefault9").checked);
+		var js_op6 = (document.getElementById("flexCheckChecked9").checked);
+
+		// CONDICIONAIS:
+
+		if (js_op1 == true) {
+
+			js_preco = (js_preco + 80);
+
+		}
+		if (js_op2 == true) {
+
+			js_preco = (js_preco + 1100);
+
+		}
+		if (js_op3 == true) {
+
+			js_preco = (js_preco + 25);
+
+		}
+		if (js_op4 == true) {
+
+			js_preco = (js_preco + 20);
+
+		}
+		if (js_op5 == true) {
+
+			js_preco = (js_preco + 100);
+
+		}
+		if (js_op6 == true) {
+
+			js_preco = (js_preco + 2000);
+
+		}
+
+		js_porcentagem = (js_preco * 0.10);
+		js_vista = (js_preco - js_porcentagem);
+		js_parcelado = (js_preco + js_porcentagem);
+	
+		document.write("<title>Compra Confirmada!</title>");
+		document.write("<center><h1 style='font-family: century gothic;'>Sua Compra foi Confirmada!</h1></center>");
+		document.write("<center><h2 style='font-family: century gothic;'>Boa Viagem!</h2></center>");
+		document.write("<center><img src='Imagens/logohorizon.jpg' style='width: 200px; height: auto;'></center><br><br>");
+
+		document.write("<center><table border='1px'><tr><th colspan='2' style='padding: 10px; font-family: century gothic; font-size: 23px;'>Tabela de Preços</th></tr><tr><th style='padding: 10px; font-family: century gothic; font-size: 19px;'>Preço da Passagem:</th><td style='padding: 10px; text-align: center; font-family: century gothic;'>R$", js_preco, "</td></tr>");
+		document.write("<tr><th style='padding: 10px; font-family: century gothic; font-size: 19px;'>Taxa de Parcelamento:</th><td style='padding: 10px; font-family: century gothic;'>10% Sobre o Preço</td></tr><tr><th style='padding: 10px; font-family: century gothic; font-size: 19px;'>Desconto À vista:</th><td style='padding: 10px; font-family: century gothic;'>10% Sobre o Preço</td></tr>");
+		document.write("<tr><th style='padding: 10px; font-family: century gothic; font-size: 19px;'>Valor Parcelado:</th><td style='padding: 10px; text-align: center; font-family: century gothic;'>R$", js_parcelado, "</td></tr>");
+		document.write("<tr><th style='padding: 10px; font-family: century gothic; font-size: 19px;'>Valor À Vista:</th><td style='padding: 10px; text-align: center; font-family: century gothic;'>R$", js_vista, "</td></tr></table><br><br>");
+		document.write("<a href='index.html'><button style='padding: 10px; font-size: 15px; font-family: century gothic; border: 1px solid; background-color: #11F69636; border-radius: 10px; cursor: pointer;'>Voltar à Página Principal</button></a>");
+
+		};
+
+		function preco4() {
+			
+		// ATRIBUIÇÃO:
+		var js_preco = 2100;
+
+		var js_op1 = (document.getElementById("flexCheckDefault10").checked);
+		var js_op2 = (document.getElementById("flexCheckChecked10").checked);
+		var js_op3 = (document.getElementById("flexCheckDefault11").checked);
+		var js_op4 = (document.getElementById("flexCheckChecked11").checked);
+		var js_op5 = (document.getElementById("flexCheckDefault12").checked);
+		var js_op6 = (document.getElementById("flexCheckChecked12").checked);
+
+		// CONDICIONAIS:
+
+		if (js_op1 == true) {
+
+			js_preco = (js_preco + 80);
+
+		}
+		if (js_op2 == true) {
+
+			js_preco = (js_preco + 1100);
+
+		}
+		if (js_op3 == true) {
+
+			js_preco = (js_preco + 25);
+
+		}
+		if (js_op4 == true) {
+
+			js_preco = (js_preco + 20);
+
+		}
+		if (js_op5 == true) {
+
+			js_preco = (js_preco + 100);
+
+		}
+		if (js_op6 == true) {
+
+			js_preco = (js_preco + 2000);
+
+		}
+
+		js_porcentagem = (js_preco * 0.10);
+		js_vista = (js_preco - js_porcentagem);
+		js_parcelado = (js_preco + js_porcentagem);
+	
+		document.write("<title>Compra Confirmada!</title>");
+		document.write("<center><h1 style='font-family: century gothic;'>Sua Compra foi Confirmada!</h1></center>");
+		document.write("<center><h2 style='font-family: century gothic;'>Boa Viagem!</h2></center>");
+		document.write("<center><img src='Imagens/logohorizon.jpg' style='width: 200px; height: auto;'></center><br><br>");
+
+		document.write("<center><table border='1px'><tr><th colspan='2' style='padding: 10px; font-family: century gothic; font-size: 23px;'>Tabela de Preços</th></tr><tr><th style='padding: 10px; font-family: century gothic; font-size: 19px;'>Preço da Passagem:</th><td style='padding: 10px; text-align: center; font-family: century gothic;'>R$", js_preco, "</td></tr>");
+		document.write("<tr><th style='padding: 10px; font-family: century gothic; font-size: 19px;'>Taxa de Parcelamento:</th><td style='padding: 10px; font-family: century gothic;'>10% Sobre o Preço</td></tr><tr><th style='padding: 10px; font-family: century gothic; font-size: 19px;'>Desconto À vista:</th><td style='padding: 10px; font-family: century gothic;'>10% Sobre o Preço</td></tr>");
+		document.write("<tr><th style='padding: 10px; font-family: century gothic; font-size: 19px;'>Valor Parcelado:</th><td style='padding: 10px; text-align: center; font-family: century gothic;'>R$", js_parcelado, "</td></tr>");
+		document.write("<tr><th style='padding: 10px; font-family: century gothic; font-size: 19px;'>Valor À Vista:</th><td style='padding: 10px; text-align: center; font-family: century gothic;'>R$", js_vista, "</td></tr></table><br><br>");
+		document.write("<a href='index.html'><button style='padding: 10px; font-size: 15px; font-family: century gothic; border: 1px solid; background-color: #11F69636; border-radius: 10px; cursor: pointer;'>Voltar à Página Principal</button></a>");
+
+		}
+
+		function preco5() {
+			
+		// ATRIBUIÇÃO:
+		var js_preco = 1600;
+
+		var js_op1 = (document.getElementById("flexCheckDefault13").checked);
+		var js_op2 = (document.getElementById("flexCheckChecked13").checked);
+		var js_op3 = (document.getElementById("flexCheckDefault14").checked);
+		var js_op4 = (document.getElementById("flexCheckChecked14").checked);
+		var js_op5 = (document.getElementById("flexCheckDefault15").checked);
+		var js_op6 = (document.getElementById("flexCheckChecked15").checked);
+
+		// CONDICIONAIS:
+
+		if (js_op1 == true) {
+
+			js_preco = (js_preco + 80);
+
+		}
+		if (js_op2 == true) {
+
+			js_preco = (js_preco + 1100);
+
+		}
+		if (js_op3 == true) {
+
+			js_preco = (js_preco + 25);
+
+		}
+		if (js_op4 == true) {
+
+			js_preco = (js_preco + 20);
+
+		}
+		if (js_op5 == true) {
+
+			js_preco = (js_preco + 100);
+
+		}
+		if (js_op6 == true) {
+
+			js_preco = (js_preco + 2000);
+
+		}
+
+		js_porcentagem = (js_preco * 0.10);
+		js_vista = (js_preco - js_porcentagem);
+		js_parcelado = (js_preco + js_porcentagem);
+	
+		document.write("<title>Compra Confirmada!</title>");
+		document.write("<center><h1 style='font-family: century gothic;'>Sua Compra foi Confirmada!</h1></center>");
+		document.write("<center><h2 style='font-family: century gothic;'>Boa Viagem!</h2></center>");
+		document.write("<center><img src='Imagens/logohorizon.jpg' style='width: 200px; height: auto;'></center><br><br>");
+
+		document.write("<center><table border='1px'><tr><th colspan='2' style='padding: 10px; font-family: century gothic; font-size: 23px;'>Tabela de Preços</th></tr><tr><th style='padding: 10px; font-family: century gothic; font-size: 19px;'>Preço da Passagem:</th><td style='padding: 10px; text-align: center; font-family: century gothic;'>R$", js_preco, "</td></tr>");
+		document.write("<tr><th style='padding: 10px; font-family: century gothic; font-size: 19px;'>Taxa de Parcelamento:</th><td style='padding: 10px; font-family: century gothic;'>10% Sobre o Preço</td></tr><tr><th style='padding: 10px; font-family: century gothic; font-size: 19px;'>Desconto À vista:</th><td style='padding: 10px; font-family: century gothic;'>10% Sobre o Preço</td></tr>");
+		document.write("<tr><th style='padding: 10px; font-family: century gothic; font-size: 19px;'>Valor Parcelado:</th><td style='padding: 10px; text-align: center; font-family: century gothic;'>R$", js_parcelado, "</td></tr>");
+		document.write("<tr><th style='padding: 10px; font-family: century gothic; font-size: 19px;'>Valor À Vista:</th><td style='padding: 10px; text-align: center; font-family: century gothic;'>R$", js_vista, "</td></tr></table><br><br>");
+		document.write("<a href='index.html'><button style='padding: 10px; font-size: 15px; font-family: century gothic; border: 1px solid; background-color: #11F69636; border-radius: 10px; cursor: pointer;'>Voltar à Página Principal</button></a>");
+
+		}
+
+		function preco6() {
+			
+		// ATRIBUIÇÃO:
+		var js_preco = 2800;
+
+		var js_op1 = (document.getElementById("flexCheckDefault16").checked);
+		var js_op2 = (document.getElementById("flexCheckChecked16").checked);
+		var js_op3 = (document.getElementById("flexCheckDefault17").checked);
+		var js_op4 = (document.getElementById("flexCheckChecked17").checked);
+		var js_op5 = (document.getElementById("flexCheckDefault18").checked);
+		var js_op6 = (document.getElementById("flexCheckChecked18").checked);
+
+		// CONDICIONAIS:
+
+		if (js_op1 == true) {
+
+			js_preco = (js_preco + 80);
+
+		}
+		if (js_op2 == true) {
+
+			js_preco = (js_preco + 1100);
+
+		}
+		if (js_op3 == true) {
+
+			js_preco = (js_preco + 25);
+
+		}
+		if (js_op4 == true) {
+
+			js_preco = (js_preco + 20);
+
+		}
+		if (js_op5 == true) {
+
+			js_preco = (js_preco + 100);
+
+		}
+		if (js_op6 == true) {
+
+			js_preco = (js_preco + 2000);
+
+		}
+
+		js_porcentagem = (js_preco * 0.10);
+		js_vista = (js_preco - js_porcentagem);
+		js_parcelado = (js_preco + js_porcentagem);
+	
+		document.write("<title>Compra Confirmada!</title>");
+		document.write("<center><h1 style='font-family: century gothic;'>Sua Compra foi Confirmada!</h1></center>");
+		document.write("<center><h2 style='font-family: century gothic;'>Boa Viagem!</h2></center>");
+		document.write("<center><img src='Imagens/logohorizon.jpg' style='width: 200px; height: auto;'></center><br><br>");
+
+		document.write("<center><table border='1px'><tr><th colspan='2' style='padding: 10px; font-family: century gothic; font-size: 23px;'>Tabela de Preços</th></tr><tr><th style='padding: 10px; font-family: century gothic; font-size: 19px;'>Preço da Passagem:</th><td style='padding: 10px; text-align: center; font-family: century gothic;'>R$", js_preco, "</td></tr>");
+		document.write("<tr><th style='padding: 10px; font-family: century gothic; font-size: 19px;'>Taxa de Parcelamento:</th><td style='padding: 10px; font-family: century gothic;'>10% Sobre o Preço</td></tr><tr><th style='padding: 10px; font-family: century gothic; font-size: 19px;'>Desconto À vista:</th><td style='padding: 10px; font-family: century gothic;'>10% Sobre o Preço</td></tr>");
+		document.write("<tr><th style='padding: 10px; font-family: century gothic; font-size: 19px;'>Valor Parcelado:</th><td style='padding: 10px; text-align: center; font-family: century gothic;'>R$", js_parcelado, "</td></tr>");
+		document.write("<tr><th style='padding: 10px; font-family: century gothic; font-size: 19px;'>Valor À Vista:</th><td style='padding: 10px; text-align: center; font-family: century gothic;'>R$", js_vista, "</td></tr></table><br><br>");
+		document.write("<a href='index.html'><button style='padding: 10px; font-size: 15px; font-family: century gothic; border: 1px solid; background-color: #11F69636; border-radius: 10px; cursor: pointer;'>Voltar à Página Principal</button></a>");
+
+		}
+
+		function preco7() {
+			
+		// ATRIBUIÇÃO:
+		var js_preco = 1900;
+
+		var js_op1 = (document.getElementById("flexCheckDefault19").checked);
+		var js_op2 = (document.getElementById("flexCheckChecked19").checked);
+		var js_op3 = (document.getElementById("flexCheckDefault20").checked);
+		var js_op4 = (document.getElementById("flexCheckChecked20").checked);
+		var js_op5 = (document.getElementById("flexCheckDefault21").checked);
+		var js_op6 = (document.getElementById("flexCheckChecked21").checked);
+
+		// CONDICIONAIS:
+
+		if (js_op1 == true) {
+
+			js_preco = (js_preco + 80);
+
+		}
+		if (js_op2 == true) {
+
+			js_preco = (js_preco + 1100);
+
+		}
+		if (js_op3 == true) {
+
+			js_preco = (js_preco + 25);
+
+		}
+		if (js_op4 == true) {
+
+			js_preco = (js_preco + 20);
+
+		}
+		if (js_op5 == true) {
+
+			js_preco = (js_preco + 100);
+
+		}
+		if (js_op6 == true) {
+
+			js_preco = (js_preco + 2000);
+
+		}
+
+		js_porcentagem = (js_preco * 0.10);
+		js_vista = (js_preco - js_porcentagem);
+		js_parcelado = (js_preco + js_porcentagem);
+	
+		document.write("<title>Compra Confirmada!</title>");
+		document.write("<center><h1 style='font-family: century gothic;'>Sua Compra foi Confirmada!</h1></center>");
+		document.write("<center><h2 style='font-family: century gothic;'>Boa Viagem!</h2></center>");
+		document.write("<center><img src='Imagens/logohorizon.jpg' style='width: 200px; height: auto;'></center><br><br>");
+
+		document.write("<center><table border='1px'><tr><th colspan='2' style='padding: 10px; font-family: century gothic; font-size: 23px;'>Tabela de Preços</th></tr><tr><th style='padding: 10px; font-family: century gothic; font-size: 19px;'>Preço da Passagem:</th><td style='padding: 10px; text-align: center; font-family: century gothic;'>R$", js_preco, "</td></tr>");
+		document.write("<tr><th style='padding: 10px; font-family: century gothic; font-size: 19px;'>Taxa de Parcelamento:</th><td style='padding: 10px; font-family: century gothic;'>10% Sobre o Preço</td></tr><tr><th style='padding: 10px; font-family: century gothic; font-size: 19px;'>Desconto À vista:</th><td style='padding: 10px; font-family: century gothic;'>10% Sobre o Preço</td></tr>");
+		document.write("<tr><th style='padding: 10px; font-family: century gothic; font-size: 19px;'>Valor Parcelado:</th><td style='padding: 10px; text-align: center; font-family: century gothic;'>R$", js_parcelado, "</td></tr>");
+		document.write("<tr><th style='padding: 10px; font-family: century gothic; font-size: 19px;'>Valor À Vista:</th><td style='padding: 10px; text-align: center; font-family: century gothic;'>R$", js_vista, "</td></tr></table><br><br>");
+		document.write("<a href='index.html'><button style='padding: 10px; font-size: 15px; font-family: century gothic; border: 1px solid; background-color: #11F69636; border-radius: 10px; cursor: pointer;'>Voltar à Página Principal</button></a>");
+
+		}
+		function preco8() {
+			
+		// ATRIBUIÇÃO:
+		var js_preco = 1600;
+
+		var js_op1 = (document.getElementById("flexCheckDefault22").checked);
+		var js_op2 = (document.getElementById("flexCheckChecked22").checked);
+		var js_op3 = (document.getElementById("flexCheckDefault23").checked);
+		var js_op4 = (document.getElementById("flexCheckChecked23").checked);
+		var js_op5 = (document.getElementById("flexCheckDefault24").checked);
+		var js_op6 = (document.getElementById("flexCheckChecked24").checked);
+
+		// CONDICIONAIS:
+
+		if (js_op1 == true) {
+
+			js_preco = (js_preco + 80);
+
+		}
+		if (js_op2 == true) {
+
+			js_preco = (js_preco + 1100);
+
+		}
+		if (js_op3 == true) {
+
+			js_preco = (js_preco + 25);
+
+		}
+		if (js_op4 == true) {
+
+			js_preco = (js_preco + 20);
+
+		}
+		if (js_op5 == true) {
+
+			js_preco = (js_preco + 100);
+
+		}
+		if (js_op6 == true) {
+
+			js_preco = (js_preco + 2000);
+
+		}
+
+		js_porcentagem = (js_preco * 0.10);
+		js_vista = (js_preco - js_porcentagem);
+		js_parcelado = (js_preco + js_porcentagem);
+	
+		document.write("<title>Compra Confirmada!</title>");
+		document.write("<center><h1 style='font-family: century gothic;'>Sua Compra foi Confirmada!</h1></center>");
+		document.write("<center><h2 style='font-family: century gothic;'>Boa Viagem!</h2></center>");
+		document.write("<center><img src='Imagens/logohorizon.jpg' style='width: 200px; height: auto;'></center><br><br>");
+
+		document.write("<center><table border='1px'><tr><th colspan='2' style='padding: 10px; font-family: century gothic; font-size: 23px;'>Tabela de Preços</th></tr><tr><th style='padding: 10px; font-family: century gothic; font-size: 19px;'>Preço da Passagem:</th><td style='padding: 10px; text-align: center; font-family: century gothic;'>R$", js_preco, "</td></tr>");
+		document.write("<tr><th style='padding: 10px; font-family: century gothic; font-size: 19px;'>Taxa de Parcelamento:</th><td style='padding: 10px; font-family: century gothic;'>10% Sobre o Preço</td></tr><tr><th style='padding: 10px; font-family: century gothic; font-size: 19px;'>Desconto À vista:</th><td style='padding: 10px; font-family: century gothic;'>10% Sobre o Preço</td></tr>");
+		document.write("<tr><th style='padding: 10px; font-family: century gothic; font-size: 19px;'>Valor Parcelado:</th><td style='padding: 10px; text-align: center; font-family: century gothic;'>R$", js_parcelado, "</td></tr>");
+		document.write("<tr><th style='padding: 10px; font-family: century gothic; font-size: 19px;'>Valor À Vista:</th><td style='padding: 10px; text-align: center; font-family: century gothic;'>R$", js_vista, "</td></tr></table><br><br>");
+		document.write("<a href='index.html'><button style='padding: 10px; font-size: 15px; font-family: century gothic; border: 1px solid; background-color: #11F69636; border-radius: 10px; cursor: pointer;'>Voltar à Página Principal</button></a>");
+
+		}
+		function preco9() {
+			
+		// ATRIBUIÇÃO:
+		var js_preco = 2500;
+
+		var js_op1 = (document.getElementById("flexCheckDefault25").checked);
+		var js_op2 = (document.getElementById("flexCheckChecked25").checked);
+		var js_op3 = (document.getElementById("flexCheckDefault26").checked);
+		var js_op4 = (document.getElementById("flexCheckChecked26").checked);
+		var js_op5 = (document.getElementById("flexCheckDefault27").checked);
+		var js_op6 = (document.getElementById("flexCheckChecked27").checked);
+
+		// CONDICIONAIS:
+
+		if (js_op1 == true) {
+
+			js_preco = (js_preco + 80);
+
+		}
+		if (js_op2 == true) {
+
+			js_preco = (js_preco + 1100);
+
+		}
+		if (js_op3 == true) {
+
+			js_preco = (js_preco + 25);
+
+		}
+		if (js_op4 == true) {
+
+			js_preco = (js_preco + 20);
+
+		}
+		if (js_op5 == true) {
+
+			js_preco = (js_preco + 100);
+
+		}
+		if (js_op6 == true) {
+
+			js_preco = (js_preco + 2000);
+
+		}
+
+		js_porcentagem = (js_preco * 0.10);
+		js_vista = (js_preco - js_porcentagem);
+		js_parcelado = (js_preco + js_porcentagem);
+	
+		document.write("<title>Compra Confirmada!</title>");
+		document.write("<center><h1 style='font-family: century gothic;'>Sua Compra foi Confirmada!</h1></center>");
+		document.write("<center><h2 style='font-family: century gothic;'>Boa Viagem!</h2></center>");
+		document.write("<center><img src='Imagens/logohorizon.jpg' style='width: 200px; height: auto;'></center><br><br>");
+
+		document.write("<center><table border='1px'><tr><th colspan='2' style='padding: 10px; font-family: century gothic; font-size: 23px;'>Tabela de Preços</th></tr><tr><th style='padding: 10px; font-family: century gothic; font-size: 19px;'>Preço da Passagem:</th><td style='padding: 10px; text-align: center; font-family: century gothic;'>R$", js_preco, "</td></tr>");
+		document.write("<tr><th style='padding: 10px; font-family: century gothic; font-size: 19px;'>Taxa de Parcelamento:</th><td style='padding: 10px; font-family: century gothic;'>10% Sobre o Preço</td></tr><tr><th style='padding: 10px; font-family: century gothic; font-size: 19px;'>Desconto À vista:</th><td style='padding: 10px; font-family: century gothic;'>10% Sobre o Preço</td></tr>");
+		document.write("<tr><th style='padding: 10px; font-family: century gothic; font-size: 19px;'>Valor Parcelado:</th><td style='padding: 10px; text-align: center; font-family: century gothic;'>R$", js_parcelado, "</td></tr>");
+		document.write("<tr><th style='padding: 10px; font-family: century gothic; font-size: 19px;'>Valor À Vista:</th><td style='padding: 10px; text-align: center; font-family: century gothic;'>R$", js_vista, "</td></tr></table><br><br>");
+		document.write("<a href='index.html'><button style='padding: 10px; font-size: 15px; font-family: century gothic; border: 1px solid; background-color: #11F69636; border-radius: 10px; cursor: pointer;'>Voltar à Página Principal</button></a>");
+
+		}
+
+
+	</script>
+
+	<script type="text/javascript">
+		
+		function gotopag1() {
+			window.open("Dados_Viagem.html", "_top");
+		}
+
+	</script>
+
+
+<!------------------------------------------------------------------------------------------------------------->
+
+
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+</body>
+</html>

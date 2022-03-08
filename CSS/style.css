@@ -1,0 +1,39 @@
+body {
+	padding: 0;
+	margin: 0;
+}
+
+#Nav{
+	font-size: 11px;
+	margin: -4px;
+	margin-right: 4px;
+}
+
+#minnav {
+	margin-bottom: -16px;
+}
+
+.navbar img{
+	height: 100px;
+	width: auto;
+	margin-right: 40px;
+}
+
+footer img{
+	height: 100px;
+	width: auto;
+	margin-right: 20px;
+}
+
+#id_oferta ul{
+	list-style-type: none;
+}
+
+#id_oferta ul li{
+	display: inline-block;
+	padding-left: 40px;
+}
+
+#id_oferta ul li a{
+	color: black;
+}

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Linkagem para CSS -->
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+
+	<title>Horizon Airlines - Serviços</title>
+
+	<link rel="shortcut icon" href="Imagens/logopng.png">
+
+	<style type="text/css">
+		
+		.navbar label a:hover{
+			text-decoration: underline;
+			text-decoration-color: #11F69636;
+		}
+
+	</style>
+	
+</head>
+<body>
+
+	<!-- ChatBot -->
+
+	<script src="https://unpkg.com/blip-chat-widget" type="text/javascript">
+	</script>
+	<script>
+    	(function () {
+      		window.onload = function () {
+        	new BlipChat()
+        	.withAppKey('aG9yaXpvbmJvdDpkNWRjOThlYS1hZGM2LTQwOTctYTM3Zi04ODVmODI1ZDQ0MDE=')
+        	.withButton({"color":"#11F696","icon":""})
+        	.withCustomCommonUrl('https://daniel-rodrigues-yo836.chat.blip.ai/')
+        	.build();
+        	}
+  		})();
+	</script>
+
+	<!-- NavBar -->
+
+	<div class="p-0" style="background-color: #11F69636;" id="minnav">
+
+		<!-- Informações da NavBar -->
+
+		<div class="d-flex bd-highlight mb-3">
+			<div class="p-2 me-auto bd-highlight" id="Nav"><a class="nav-link p-0 text-black" href="index.html">← Início</a></div>
+			<div class="p-2 bd-highlight" id="Nav"><a href="Contatos.html" class="nav-link p-0 text-black">Contatos</a></div>
+			<div class="p-2 bd-highlight" id="Nav">|</div>
+			<div class="p-2 bd-highlight" id="Nav"><a href="Sobre_Horizon.html" class="nav-link p-0 text-black">Sobre Nós</a></div>
+			<div class="p-2 bd-highlight" id="Nav">|</div>
+			<div class="p-2 bd-highlight" id="Nav"><a href="Parceiros.html" class="nav-link p-0 text-black">Parceiros</a></div>
+		</div>
+	</div>
+
+	<!-- Navbar Principal -->
+
+	<nav class="navbar navbar-expand-lg navbar-light p-4">
+  		<div class="container-fluid">
+    		<a class="navbar-brand" href="index.html"><img src="Imagens/logohorizon.jpg"></a>
+    		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      			<span class="navbar-toggler-icon"></span>
+    		</button>
+    		<div class="collapse navbar-collapse" id="navbarNavDropdown">
+      			<ul class="navbar-nav">
+        			<li class="nav-item">
+          				<a class="nav-link" href="Passagens.html">Passagens Aéreas</a>
+        			</li>
+        			<li class="nav-item">
+          				<a class="nav-link" href="Ofertas.html">Ofertas e Destinos</a>
+        			</li>
+        			<li class="nav-item dropdown">
+          				<a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            			Central e Atendimento
+          				</a>
+			          		<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+			            		<li><a class="dropdown-item active" style="background-color: #11F69636; color: black; cursor: default;" href="#">Serviços Horizon</a></li>
+			            		<li><a class="dropdown-item" href="Duvidas.html">Central de Dúvidas</a></li>
+			            		<li><a class="dropdown-item" href="Sobre_Horizon.html">Sobre a Horizon Airlines</a></li>
+		          			</ul>
+          				
+      			</ul>
+    		</div>
+  		</div>
+  		<label class="nav-link fw-normal" for="id_login" style="color: gray; font-size: 21px; cursor: pointer;"><a href="Login.html" class="nav-link p-0 text-black">Login</a></label>
+  		<a href="Login.html"><img src="Imagens/logologin.png" id=id_login style="width: 40px; height: auto;"></a>
+	</nav>
+
+	<!-- Info | Serv. Horizon -->
+
+	<div class="p-5" style="background-color: #11F69636">
+		<p class="fs-4"><b>O que é os Serviços Horizon?</b></p>
+		<p class="fs-6">Os Serviços Horizon foi projetada para entregar aos passageiros uma viagem mais tranquila e confortável.</p>
+	</div>
+
+	<!-- Serv. Horizon -->
+
+	<div class="p-5">
+		<p class="fs-4"><b>Nossos Serviços:</b></p>
+	</div>
+
+	<!-- Cards | linha 1 | -->
+
+	<div class="container">
+		<div class="card-group">
+			<div class="card ms-3 shadow rounded">
+			    <img src="Imagens/Tv.jpg" class="card-img-top" alt="...">
+			    <div class="card-body d-flex flex-column align-items-center">
+			    	<h5 class="card-title">Serviço de TV</h5>
+			    	<hr width="40%" size="5px" style="background-color: #11F696">
+			    	<p class="card-text" style="text-align: center;">Para que você e sua falmília não perca nenhuma notícia, os aviões da Horizon Airlines é equipado com uma tv para que sinta-se totalmente confortável e antenado.</p>
+			    	<br>
+
+			    	<!-- Button trigger modal -->
+							<button type="button" class="btn btn-success mt-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">
+	  							+ Informações
+							</button>
+
+					<!-- Modal -->
+
+					<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  						<div class="modal-dialog">
+    						<div class="modal-content">
+      							<div class="modal-header">
+        							<h5 class="modal-title" id="exampleModalLabel">Serviço de TV</h5>
+        							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      							</div>
+      							<div class="modal-body">
+        							<p class="fw-normal">Este serviço estará disponível no ato da sua compra. <i>(Opcional)</i></p>
+        							<br>
+        							<p class="fs-5 fw-bolder">Taxa de serviço:</p>
+        							<p class="fs-4" style="text-align: center;">R$ 80,00</p>
+      							</div>
+      							<div class="modal-footer">
+        							<button type="button" class="btn btn-success" data-bs-dismiss="modal">Fechar</button>
+      							</div>
+    						</div>
+  						</div>
+					</div>			    
+				</div>
+			</div>
+
+			<div class="card ms-3 shadow rounded">
+			    <img src="Imagens/Cl.Executiva.png" class="card-img-top" alt="...">
+			    <div class="card-body d-flex flex-column align-items-center">
+			    	<h5 class="card-title">Assento Executivo</h5>
+			    	<hr width="40%" size="5px" style="background-color: #11F696">
+			    	<p class="card-text" style="text-align: center;">Aqueles que desejam o melhor para você mesmo ou para família, a Horizon Airlines possui assentos executivos, que querem gastar mais para um atendimento e conforto único e incomparável.</p>
+			    	<br>
+
+			    	<!-- Button trigger modal -->
+							<button type="button" class="btn btn-success mt-auto" data-bs-toggle="modal" data-bs-target="#exampleModa2">
+	  							+ Informações
+							</button>
+
+					<!-- Modal -->
+
+					<div class="modal fade" id="exampleModa2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  						<div class="modal-dialog">
+    						<div class="modal-content">
+      							<div class="modal-header">
+        							<h5 class="modal-title" id="exampleModalLabel">Classe Executiva</h5>
+        							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      							</div>
+      							<div class="modal-body">
+        							<p class="fw-normal">Este serviço estará disponível no ato da sua compra. <i>(Opcional)</i></p>
+        							<br>
+        							<p class="fs-5 fw-bolder">Taxa de serviço:</p>
+        							<p class="fs-4" style="text-align: center;">R$ 1.100,00</p>
+      							</div>
+      							<div class="modal-footer">
+        							<button type="button" class="btn btn-success" data-bs-dismiss="modal">Fechar</button>
+      							</div>
+    						</div>
+  						</div>
+					</div>			    
+			    </div>
+			</div>
+			<div class="card ms-3 shadow rounded">
+			    <img src="Imagens/Net.jpg" class="card-img-top" alt="...">
+			    <div class="card-body d-flex flex-column align-items-center">
+			    	<h5 class="card-title">Serviço de Internet</h5>
+			    	<hr width="40%" size="5px" style="background-color: #11F696">
+			    	<p class="card-text" style="text-align: center;">A Horizon Airlines possui internet para todos os passageiros, dessa forma, você fica a todo momento conectado com seus amigos e familiares onde quer que esteja.</p>
+			    	<br>
+
+			    	<!-- Button trigger modal -->
+							<button type="button" class="btn btn-success mt-auto" data-bs-toggle="modal" data-bs-target="#exampleModa3">
+	  							+ Informações
+							</button>
+
+					<!-- Modal -->
+
+					<div class="modal fade" id="exampleModa3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  						<div class="modal-dialog">
+    						<div class="modal-content">
+      							<div class="modal-header">
+        							<h5 class="modal-title" id="exampleModalLabel">Serviço de Internet</h5>
+        							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      							</div>
+      							<div class="modal-body">
+        							<p class="fw-normal">Este serviço estará disponível no ato da sua compra. <i>(Incluso)</i></p>
+        							<br>
+        							<p class="fs-5 fw-bolder">Taxa de serviço, já incluso no pacote:</p>
+        							<p class="fs-4" style="text-align: center;">R$ 25,00</p>
+      							</div>
+      							<div class="modal-footer">
+        							<button type="button" class="btn btn-success" data-bs-dismiss="modal">Fechar</button>
+      							</div>
+    						</div>
+  						</div>
+					</div>			    
+			    </div>
+			</div>
+		</div>
+	</div>
+	<br>
+
+	<!-- Cards | Linha 2 | -->
+
+	<div class="container">
+		<div class="card-group">
+			<div class="card ms-3 shadow rounded">
+			    <img src="Imagens/Moon.jpg" class="card-img-top" alt="...">
+			    <div class="card-body d-flex flex-column align-items-center">
+			    	<h5 class="card-title">Moon Voo</h5>
+			    	<hr width="40%" size="5px" style="background-color: #11F696">
+			    	<p class="card-text" style="text-align: center;">Para aqueles que curte uma viagem à noite, a Horizon Airlines oferece kits noturnos para que o passageiro sintam-se abraçados e confortáveis durante a viagem.</p>
+			    	<br>
+
+			    	<!-- Button trigger modal -->
+							<button type="button" class="btn btn-success mt-auto" data-bs-toggle="modal" data-bs-target="#exampleModa4">
+	  							+ Informações
+							</button>
+
+					<!-- Modal -->
+					
+					<div class="modal fade" id="exampleModa4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  						<div class="modal-dialog">
+    						<div class="modal-content">
+      							<div class="modal-header">
+        							<h5 class="modal-title" id="exampleModalLabel">Moon Voo</h5>
+        							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      							</div>
+      							<div class="modal-body">
+        							<p class="fw-normal">Este kit estará disponível durante o Voo. <i>(Opcional)</i></p>
+        							<br>
+        							<p class="fs-5 fw-bolder">Valor do kit:</p>
+        							<p class="fs-4" style="text-align: center;">R$ 20,00</p>
+      							</div>
+      							<div class="modal-footer">
+        							<button type="button" class="btn btn-success" data-bs-dismiss="modal">Fechar</button>
+      							</div>
+    						</div>
+  						</div>
+					</div>			    
+			    </div>
+			</div>
+			<div class="card ms-3 shadow rounded">
+			    <img src="Imagens/Gourmet.jpg" class="card-img-top" alt="...">
+			    <div class="card-body d-flex flex-column align-items-center">
+			    	<h5 class="card-title">Serviço de Comida Goumert</h5>
+			    	<hr width="40%" size="5px" style="background-color: #11F696">
+			    	<p class="card-text" style="text-align: center;">Nos aviões da Horizon Airlines, temos o serviço de alimentação especial: Comida Gourmet.</p>
+			    	<br><br>
+
+			    	<!-- Button trigger modal -->
+								<button type="button" class="btn btn-success mt-auto" data-bs-toggle="modal" data-bs-target="#exampleModa5">
+		  							+ Informações
+								</button>
+							
+
+					<!-- Modal -->
+					
+					<div class="modal fade" id="exampleModa5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  						<div class="modal-dialog">
+    						<div class="modal-content">
+      							<div class="modal-header">
+        							<h5 class="modal-title" id="exampleModalLabel">Comida Gourmet</h5>
+        							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      							</div>
+      							<div class="modal-body">
+        							<p class="fw-normal">Este serviço estará disponível no ato da sua compra. <i>(Opcional)</i></p>
+        							<br>
+        							<p class="fs-5 fw-bolder">Taxa de serviço:</p>
+        							<p class="fs-4" style="text-align: center;">R$ 100,00</p>
+      							</div>
+      							<div class="modal-footer">
+        							<button type="button" class="btn btn-success" data-bs-dismiss="modal">Fechar</button>
+      							</div>
+    						</div>
+  						</div>
+					</div>			    
+			    </div>
+			</div>
+			<div class="card ms-3 shadow rounded">
+			    <img src="Imagens/logohorizonestic.jpg" class="card-img-top" alt="...">
+			    <div class="card-body d-flex flex-column align-items-center">
+			    	<br>
+			    	<h5 class="card-title">Full Horizon</h5>
+			    	<hr width="40%" size="5px" style="background-color: #11F696">
+			    	<p class="card-text" style="text-align: center;">Os passageiros podem ter uma ou até mesmo todas os serviços que a Horizon Airlines pode oferecer.<br>
+			    	Com descontos que você só encontra aqui.</p>
+			    	<br>
+			    	<!-- Button trigger modal -->
+							<button type="button" class="btn btn-success mt-auto" data-bs-toggle="modal" data-bs-target="#exampleModa6">
+	  							+ Informações
+							</button>
+
+					<!-- Modal -->
+					
+					<div class="modal fade" id="exampleModa6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  						<div class="modal-dialog">
+    						<div class="modal-content">
+      							<div class="modal-header">
+        							<h5 class="modal-title" id="exampleModalLabel">Full Horizon</h5>
+        							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      							</div>
+      							<div class="modal-body">
+        							<p class="fw-normal">Este serviço estará disponível no ato da sua compra. <i>(Opcional)</i></p>
+        							<br>
+        							<p class="fs-5 fw-bolder">Taxa de serviço:</p>
+        							<p class="fs-4" style="text-align: center;">R$ 2.000,00</p>
+      							</div>
+      							<div class="modal-footer">
+        							<button type="button" class="btn btn-success" data-bs-dismiss="modal">Fechar</button>
+      							</div>
+    						</div>
+  						</div>
+					</div>
+			    </div>
+			</div>
+		</div>
+	</div>
+	<br><br>
+	
+	<hr>
+
+
+	<!-- Rodapé -->
+
+	<div class="container">
+  		<footer class="py-5">
+    		<div class="row">
+      			<div class="col-2">
+        			<h5>Geral</h5>
+       				<ul class="nav flex-column">
+          				<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Voltar ao Topo</a></li>
+          				<li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted">Home</a></li>
+          				<li class="nav-item mb-2"><a href="Passagens.html" class="nav-link p-0 text-muted">Passagens</a></li>
+          				<li class="nav-item mb-2"><a href="Duvidas.html" class="nav-link p-0 text-muted">Dúvidas</a></li>
+          				<li class="nav-item mb-2"><a href="Sobre_Horizon.html" class="nav-link p-0 text-muted">Sobre Horizon</a></li>
+        			</ul>
+      			</div>
+
+	      		<div class="col-2">
+	        		<h5>Horizon</h5>
+	        		<ul class="nav flex-column">
+	          			<li class="nav-item mb-2"><a href="FrameWork/Companhia Horizon.pdf" class="nav-link p-0 text-muted">Wireframe</a></li>
+	          			<li class="nav-item mb-2"><a href="Contatos.html" class="nav-link p-0 text-muted">Contato</a></li>
+	          			<li class="nav-item mb-2"><a href="Parceiros.html" class="nav-link p-0 text-muted">Parceiros</a></li>
+	        		</ul>
+	      		</div>
+
+	      		<div class="col-2">
+	      		</div>
+
+	      		<div class="col-4 offset-1">
+	        		<form action="" method="post">
+	          			<h5>Se Inscreva para Avisos!</h5>
+	          			<p>Todas as notícias de voo, promoções e viagens na palma da sua mão.</p>
+	          			<div class="d-flex w-100 gap-2">
+	            			<label for="newsletter1" class="visually-hidden">Endereço de Email</label>
+	           				<input id="newsletter1" type="email" class="form-control" placeholder="Endereço de Email">
+	            			<button class="btn btn-primary" type="submit">Aceitar</button>
+	          			</div>
+        			</form><br>
+
+        			<center><h5>Criado Por:</h5>
+        			<p>Daniel Rodrigues da Rocha</p>
+        			<p>Davi Rodrigues da Rocha</p></center>
+      			</div>
+    		</div>
+
+    <div class="d-flex justify-content-between py-4 my-4 border-top container">
+    	<img src="Imagens/logohorizon.jpg">
+      <p class="ms-2" style="font-size: 13px;">© 2021 Horizon Airlines Brasil Rua Jonildo nº 999, CEP 99999-999 Brasília/DF CNPJ: 00.000.000/0000-00.<br>(Projeto desenvolvido durante o curso Front-End - SENAI GAMA)</p>
+      <ul class="list-unstyled d-flex">
+        <li class="ms-1"><a class="link-dark" href="https://twitter.com/"><img src="Imagens/Twitter.jpg" style="width: 30px; height: auto;"></a></li>
+        <li class="ms-1"><a class="link-dark" href="https://www.instagram.com/"><img src="Imagens/Insta.jpg" style="width: 30px; height: auto;"></a></li>
+        <li class="ms-1"><a class="link-dark" href="https://www.Facebook.com/"><img src="Imagens/Face.png" style="width: 30px; height: auto;"></a></li>
+      </ul>
+    </div>
+  </footer>
+</div>
+
+	<!-- Links para JS executar Bootstrap -->
+
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>
